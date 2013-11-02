@@ -9,7 +9,17 @@ namespace RepairKid.com
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Scripts/jquery-{version}.js",
+                        "~/Scripts/jquery.themepunch.revolution.min.js",
+                        "~/Scripts/jquery.themepunch.plugins.min.js",
+                        "~/Scripts/jquery.themepunch.touchSwipe.min.js",
+                        "~/Scripts/jquery.themepunch.mouseWheel.min.js",
+                        "~/Scripts/superfish.js",
+                        "~/Scripts/jquery.themepunch.prettyPhoto.js",
+                        "~/Scripts/scripts.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/jquerycarou").Include(
+                        "~/Scripts/jquery.carouFredSel-6.2.1-packed.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -25,6 +35,8 @@ namespace RepairKid.com
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/themed-bootstrap.css",
+                      "~/Content/theme.css",
                       "~/Content/site.css"));
         }
     }
