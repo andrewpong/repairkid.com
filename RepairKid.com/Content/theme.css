@@ -26,7 +26,7 @@ Purchase:  http://themeforest.net/user/josweb
 
 body {
 	margin:0; padding:0;
-	font:13px/22px 'Lato', sans-serif;
+	font:16px 'Lato', sans-serif;
 	color:#555;
 	background: #f0f0f0;  
 	-webkit-backface-visibility:hidden; 
@@ -198,12 +198,12 @@ img { vertical-align:top; ms-interpolation-mode:bicubic; opacity:1.0;}
 /**** TYPOGRAPHY ****/
 h1,h2,h3,h4,h5,h6 { font-weight:300; letter-spacing:-0.25px; }
 h1.title {  font-size:40px; line-height:35px; font-weight:700; margin-bottom:35px; text-align:left;}
-h1 { font-size: 24px; line-height:40px; }
+/*h1 { font-size: 24px; line-height:40px; }
 h2 { font-size: 21px;  line-height:28px; }
 h3 { font-size: 18px; line-height:25px; }
 h4 { font-size: 16px; line-height:25px; margin-bottom:10px; }
 h5 { font-size: 15px; line-height:22px; margin-bottom:10px; }
-h6 { font-size: 14px; line-height:22px; margin-bottom:10px; }
+h6 { font-size: 14px; line-height:22px; margin-bottom:10px; }*/
 h1.intro {  line-height:40px; font-weight:300;}
 .lead { font-size:18px; line-height:24px; }
 
@@ -1356,7 +1356,13 @@ ul#itemContainer { list-style: none; padding:0 0; margin:0 0; width:100%; }
 }
 
 /**** PRICING TABLE ****/
-.pricing-table { text-align: center;  margin-bottom:20px;-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.pricing-table {
+    text-align: center;  
+    margin-bottom:20px;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
 .pricing-table h4 { color:#fff; margin-bottom:0px; }
 .pricing-header-row-1 small { color:#111; }
 .pricing-table ul { margin:0; padding:0; list-style:none; }
@@ -1369,7 +1375,7 @@ ul#itemContainer { list-style: none; padding:0 0; margin:0 0; width:100%; }
 .pricing-table h3 { color:#2BA6CB; }
 .pricing-header-row-1 {
 	text-align:center;
-	height:50px;
+	/*height:50px;*/
 	padding:3px 0 12px;
 	background-color:#2BA6CB;  
 	-webkit-border-radius:6px 6px 0px 0px;
@@ -1378,20 +1384,20 @@ ul#itemContainer { list-style: none; padding:0 0; margin:0 0; width:100%; }
 }
 .pricing-header-row-2 {
 	text-align:center;
-	height:60px;
+	/*height:60px;*/
 	margin-top:0px;
 	padding:10px 0 ;
 	border-top:none;
 	background-color:#E7E7E7;
 }
 .pricing-content-row-odd {
-	font-size:12px;
+	/*font-size:12px;*/
 	background-color:#eee;
 	padding:8px 0;
 	color:#555;
 }
 .pricing-content-row-even {
-	font-size:12px;
+	/*font-size:12px;*/
 	background-color:#E7E7E7;
 	padding:8px 0;
 	color:#555;

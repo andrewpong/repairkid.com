@@ -34,6 +34,7 @@ namespace RepairKid.com
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
+                      "~/Content/lato.css",
                       "~/Content/bootstrap.css",
                       "~/Content/themed-bootstrap.css",
                       "~/Content/theme.css",

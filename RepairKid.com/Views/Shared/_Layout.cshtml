@@ -9,125 +9,31 @@
 
 </head>
 <body>
-
-
-
-
-    @*<div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    @Html.ActionLink("Application name", "Index", "Home", null, new { @class = "navbar-brand" })
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                        <li>@Html.ActionLink("About", "About", "Home")</li>
-                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    </ul>
-                    @Html.Partial("_LoginPartial")
-                </div>
-            </div>
-        </div>
-        <div class="container body-content">
-            @RenderBody()
-            <hr />
-            <footer>
-                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-            </footer>
-        </div>*@
-
-
     <!--header-->
     <div class="header">
         <!--logo-->
         <div class="container">
             <div class="logo">
-                <a href="index.html"><img src="img/logo.png" alt="" class="animated bounceInDown" /></a>
+                <a href="index.html"><img src="img/logo.png" alt="" class="animated bounceInDown"></a>
             </div>
             <!--menu-->
             <nav id="main_menu">
                 <div class="menu_wrap">
                     <ul class="nav sf-menu">
-                        <li class="sub-menu active">
-                            <a href="javascript:{}">Home</a>
-                            <ul>
-                                <li><a href="index.html"><span>--</span> Slider Revolution</a></li>
-                                <li><a href="index2.html"><span>--</span> Nerve Slider</a></li>
-                                <li><a href="index3.html"><span>--</span> NivoSlider</a></li>
-                                <li><a href="index4.html"><span>--</span> Video</a></li>
-                            </ul>
+                        <li class="sub-menu">
+                            @*</li><li class="sub-menu active">*@
+                            @Html.ActionLink("Home", "Index", "Home")
                         </li>
                         <li class="sub-menu">
-                            <a href="javascript:{}">Pages</a>
-                            <ul>
-                                <li><a href="team.html"><span>--</span> The Team</a></li>
-                                <li><a href="about.html"><span>--</span> About</a></li>
-                                <li><a href="services.html"><span>--</span> Services</a></li>
-                                <li><a href="testimonials.html"><span>--</span> Testimonials</a></li>
-                                <li><a href="timeline.html"><span>--</span> Timeline</a></li>
-                                <li><a href="full.html"><span>--</span> Full Width</a></li>
-                                <li><a href="left_sidebar.html"><span>--</span> Left Sidebar</a></li>
-                                <li><a href="right_sidebar.html"><span>--</span> Right Sidebar</a></li>
-                            </ul>
+                            @Html.ActionLink("Services", "Index", "Services")
                         </li>
                         <li class="sub-menu">
-                            <a href="javascript:{}">Work</a>
-                            <ul>
-                                <li><a href="portfolio_2columns.html"><span>--</span> 2 Columns</a></li>
-                                <li><a href="portfolio_3columns.html"><span>--</span> 3 Columns</a></li>
-                                <li><a href="portfolio_4columns.html"><span>--</span> 4 Columns</a></li>
-                                <li><a href="portfolio_masonry.html"><span>--</span> Masonry</a></li>
-                                <li><a href="gallery.html"><span>--</span> Paginated Gallery</a></li>
-                                <li><a href="video_gallery.html"><span>--</span> Video Gallery</a></li>
-                                <li><a href="single_portfolio.html"><span>--</span> Single Slider</a></li>
-                                <li><a href="single_video.html"><span>--</span> Single Video</a></li>
-                                <li><a href="single_image.html"><span>--</span> Single Image</a></li>
-                                <li><a href="full_slider.html"><span>--</span> Full Slider</a></li>
-                                <li><a href="full_video.html"><span>--</span> Full Video</a></li>
-                            </ul>
+                            @Html.ActionLink("About", "Index", "About")
                         </li>
-                        <li class="sub-menu">
-                            <a href="javascript:{}">Style</a>
-                            <ul>
-                                <li><a href="scaffolding.html"><span>--</span> Scaffolding</a></li>
-                                <li><a href="typography.html"><span>--</span> Typography</a></li>
-                                <li><a href="shortcodes.html"><span>--</span> Shortcodes</a></li>
-                                <li><a href="icons.html"><span>--</span> Icons</a></li>
-                                <li>
-                                    <a href="javascript:{}"><span>--</span> Colours</a>
-                                    <ul>
-                                        <li><a href="../blue/index.html"><span>--</span> Blue</a></li>
-                                        <li><a href="../orange/index.html"><span>--</span> Orange</a></li>
-                                        <li><a href="../green/index.html"><span>--</span> Green</a></li>
-                                        <li><a href="../red/index.html"><span>--</span> Red</a></li>
-                                    </ul>
-                                <li><a href="script_examples.html"><span>--</span> JS Examples</a></li>
-                            </ul>
+                        <li class="sub-menu last">
+                            @Html.ActionLink("Contact", "Index", "Contact")
                         </li>
-                        <li class="sub-menu">
-                            <a href="javascript:{}">Extras</a>
-                            <ul>
-                                <li><a href="dribbble_stream.html"><span>--</span> Dribbble Stream</a></li>
-                                <li><a href="alt_footer.html"><span>--</span> Alt. Footer & Boxes</a></li>
-                                <li><a href="pricing_table.html"><span>--</span> Pricing Table</a></li>
-                                <li><a href="404.html"><span>--</span> 404 Page</a></li>
-                            </ul>
-                        </li>
-                        <li class="sub-menu">
-                            <a href="javascript:{}">Blog</a>
-                            <ul>
-                                <li><a href="blog.html"><span>--</span> Blog</a></li>
-                                <li><a href="blog_two.html"><span>--</span> Blog II</a></li>
-                                <li><a href="blog_post.html"><span>--</span> Blog Post</a></li>
-                                <li><a href="blog_post2.html"><span>--</span> Blog Post II</a></li>
-                            </ul>
-                        </li>
-                        <li class="last"><a href="contact.html">Contact</a></li>
+
                     </ul>
                 </div>
             </nav>
@@ -135,234 +41,15 @@
     </div>
     <!--//header-->
     <!--page-->
-    <div class="container">    
-             
-        @RenderBody()            
-        </div>
-        @*
+    <div class="container">
 
-        <div id="banner">
-            <div class="container intro_wrapper">
-                <div class="inner_content">
-
-                    <!--welcome-->
-                    <div class="welcome_index">
-                        I think most <a href="#"><span class="hue_block white normal">programmers</span></a> spend the first 5 years of their career mastering
-                        <span class="hue">complexity</span>	and the rest of their lives learning <span>simplicity</span>
-                        - Buzz Andersen
-                    </div>
-                    <!--//welcome-->
-                </div>
-            </div>
-        </div>
-        <!--//banner-->
-
-        <div class="container wrapper">
-            <div class="inner_content">
-                <div class="pad45"></div>
-
-                <!--info boxes-->
-                <div class="row">
-                    <div class="span3">
-                        <div class="tile">
-                            <div class="intro-icon-disc cont-large"><i class="icon-wrench intro-icon-large"></i></div>
-                            <h6>
-                                <small>DESIGN</small>
-                                <br><a href="#"><span>built for &amp; by nerds</span></a>
-                            </h6>
-                            <p>Like you, we love building awesome products on the web. We love it so much, we decided to help people just like us do it easier, better, and faster. </p>
-                        </div>
-                        <div class="pad25"></div>
-                    </div>
-
-                    <div class="span3">
-                        <div class="tile">
-                            <div class="intro-icon-disc cont-large"><i class="icon-rocket intro-icon-large"></i></div>
-                            <h6>
-                                <small>CODE</small>
-                                <br><a href="#"><span>12-column grid</span></a>
-                            </h6>
-                            <p>
-                                Bootstrap is designed to help people of all skill levels - designer or developer, huge nerd or early beginner.
-                                Use it as a complete kit or use to start something.
-                            </p>
-                        </div>
-                        <div class="pad25"></div>
-                    </div>
-
-                    <div class="span3">
-                        <div class="tile">
-                            <div class="intro-icon-disc cont-large"><i class="icon-beaker intro-icon-large"></i></div>
-                            <h6>
-                                <small>CREATE</small>
-                                <br><a href="#"><span>responsive</span></a>
-                            </h6>
-                            <p>
-                                Bootstrap have gone fully responsive. Our components are scaled according to a range of resolutions and devices to provide a consistent
-                                experience.
-                            </p>
-                        </div>
-                        <div class="pad25"></div>
-                    </div>
-
-                    <div class="span3">
-                        <div class="tile tile-hot">
-                            <div class="intro-icon-disc cont-large"><i class="icon-book  intro-icon-large"></i></div>
-                            <h6>
-                                <small>SUPPORT</small>
-                                <br><a href="#"><span>growing library</span></a>
-                            </h6>
-                            <p>Despite being only 7kb (gzipped), Bootstrap is one of the most complete front-end toolkits out there with dozens of fully functional components.</p>
-                        </div>
-                        <div class="pad25"></div>
-                    </div>
-                </div>
-
-                <!--//info boxes-->
-                <div class="row">
-                    <!--col 1-->
-                    <div class="span12">
-                        <div class="row">
-                            <div class="pad25 hidden-phone"></div>
-
-                            <div class="span4">
-                                <h1>Recent Work</h1>
-                                <h4>Lorem ipsum dolor sit amet, rebum putant recusabo in ius, pri simul tempor ne, his ei summo virtute.</h4>
-                                <p>
-                                    Nam ea labitur pericula. Meis tamquam pro te, cibo mutat necessitatibus id vim. An his tamquam postulant, pri id mazim nostrud diceret
-                                    sapientem eloquentiam sea cu, sea ut exerci delicata. Corrumpit vituperata.
-                                </p>
-
-                                <a href="#" class="btn btn-primary  btn-custom btn-rounded">view portfolio</a>
-                                <div class="pad45"></div>
-                            </div>
-                            <!--column 2 slider-->
-                            <div class="span8 pad15 col_full2">
-
-                                <div id="slider_home">
-                                    <div class="slider-item">
-                                        <div class="slider-image">
-                                            <div class="hover_colour">
-                                                <a href="img/large/s1.jpg" data-rel="prettyPhoto">
-                                                    <img src="img/small/s1.jpg" alt="" />
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="slider-title">
-                                            <h3><a href="#">catalogue</a></h3>
-                                            <p>An his tamquam postulant, pri id mazim nostrud diceret.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="slider-item">
-                                        <div class="slider-image">
-                                            <div class="hover_colour">
-                                                <a href="img/large/s2.jpg" data-rel="prettyPhoto">
-                                                    <img src="img/small/s2.jpg" alt="" />
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="slider-title">
-                                            <h3><a href="#">loupe</a></h3>
-                                            <p>An his tamquam postulant, pri id mazim nostrud diceret.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="slider-item">
-                                        <div class="slider-image">
-                                            <div class="hover_colour">
-                                                <a href="img/large/s3.jpg" data-rel="prettyPhoto">
-                                                    <img src="img/small/s3.jpg" alt="" />
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="slider-title">
-                                            <h3><a href="#">retro rocket</a></h3>
-                                            <p>An his tamquam postulant, pri id mazim nostrud diceret.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="slider-item">
-                                        <div class="slider-image">
-                                            <div class="hover_colour">
-                                                <a href="img/large/s4.jpg" data-rel="prettyPhoto">
-                                                    <img src="img/small/s4.jpg" alt="" />
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="slider-title">
-                                            <h3><a href="#">infographics</a></h3>
-                                            <p>An his tamquam postulant, pri id mazim nostrud diceret.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="slider-item">
-                                        <div class="slider-image">
-                                            <div class="hover_colour">
-                                                <a href="img/large/s5.jpg" data-rel="prettyPhoto">
-                                                    <img src="img/small/s5.jpg" alt="" />
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="slider-title">
-                                            <h3><a href="#">mock up</a></h3>
-                                            <p>An his tamquam postulant, pri id mazim nostrud diceret.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="slider-item">
-                                        <div class="slider-image">
-                                            <div class="hover_colour">
-                                                <a href="img/large/s6.jpg" data-rel="prettyPhoto">
-                                                    <img src="img/small/s6.jpg" alt="" />
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="slider-title">
-                                            <h3><a href="#">retro badges</a></h3>
-                                            <p>An his tamquam postulant, pri id mazim nostrud diceret.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="slider-item">
-                                        <div class="slider-image">
-                                            <div class="hover_colour">
-                                                <a href="img/large/s7.jpg" data-rel="prettyPhoto">
-                                                    <img src="img/small/s7.jpg" alt="" />
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="slider-title">
-                                            <h3><a href="#">details</a></h3>
-                                            <p>An his tamquam postulant, pri id mazim nostrud diceret.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="slider-item">
-                                        <div class="slider-image">
-                                            <div class="hover_colour">
-                                                <a href="img/large/s8.jpg" data-rel="prettyPhoto">
-                                                    <img src="img/small/s8.jpg" alt="" />
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="slider-title">
-                                            <h3><a href="#">vintage form</a></h3>
-                                            <p>An his tamquam postulant, pri id mazim nostrud diceret.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="sl-prev" class="widget-scroll-prev"><i class="icon-chevron-left white"></i></div>
-                                <div id="sl-next" class="widget-scroll-next"><i class="icon-chevron-right white but_marg"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>*@
-        <!--//page-->
-
-        <div class="pad25 hidden-desktop"></div>
+        @RenderBody()
     </div>
+
+
+    <!--//page-->
+
+    <div class="pad25 hidden-lg"></div>
 
     <!-- footer -->
     <div id="footer">
@@ -384,10 +71,10 @@
     <div id="footer2">
         <div class="container">
             <div class="row">
-                <div class="span12">
+                <div class="col-sm-12 col-md-12">
                     <div class="copyright">
                         FLATI
-                        &copy;
+                        ©
                         <script type="text/javascript">
                             //<![CDATA[
                             var d = new Date()
@@ -401,7 +88,6 @@
             </div>
         </div>
     </div>
-
     <!-- up to top -->
     <a href="#"><i class="go-top hidden-phone hidden-tablet  icon-double-angle-up"></i></a>
     <!--//end-->
