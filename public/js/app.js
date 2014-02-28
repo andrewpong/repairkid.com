@@ -133,5 +133,18 @@ App.filter('interpolate', [
 App.factory('version', function() {
 	return "0.4.0";
 });
+
+App.factory('year', function() {
+	
+    // Calculates the current year
+    //  ensures we always get the last year on first load
+    $scope.currentYear = function () {
+        var currentDate = new Date();
+        return currentDate.getFullYear();
+    };
+});
+
+
+
 ;
 //# sourceMappingURL=app.js.map
