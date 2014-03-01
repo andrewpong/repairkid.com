@@ -1,0 +1,6 @@
+D:\Repositories\repairkid.com\Repairkid\bin\HTML5 Boiler Plate v4.3.dll.config
+D:\Repositories\repairkid.com\Repairkid\bin\HTML5 Boiler Plate v4.3.dll
+D:\Repositories\repairkid.com\Repairkid\bin\HTML5 Boiler Plate v4.3.pdb
+D:\Repositories\repairkid.com\Repairkid\obj\Debug\Repairkid.csprojResolveAssemblyReference.cache
+D:\Repositories\repairkid.com\Repairkid\obj\Debug\HTML5 Boiler Plate v4.3.dll
+D:\Repositories\repairkid.com\Repairkid\obj\Debug\HTML5 Boiler Plate v4.3.pdb
