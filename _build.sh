@@ -8,4 +8,4 @@ cd /Users/Hak/Repositories/repairkid.com/
 divshot deploy
 echo "Divshotted! Pushing to Firebase...";
 firebase deploy
-echo -e "Your base is on\033[31mfire\e[0m Project was deployed without a hitch.";
+echo -e "Your base is fire!! Project deployed without a hitch.";
