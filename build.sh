@@ -2,8 +2,7 @@
 echo "Compiling with harp to /Users/Hak/Repositories/repairkid.com/www/..."
 harp compile /Users/Hak/Repositories/repairkid.com/_harp -o /Users/Hak/Repositories/repairkid.com/www
 echo "Compiling complete! Committing to GitHub..."
-alias date="$(date)";
-git add -A && git commit -m 'Auto-deploy `date`' && git push
+git add -A && git commit -m "`date`" && git push
 echo "Committed! Pushing to Firebase...";
 cd /Users/Hak/Repositories/repairkid.com/
 firebase deploy
