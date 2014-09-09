@@ -1,0 +1,16 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "."
+		}
+	],
+	"build_systems":
+ [
+     {
+         "name": "repairkid.com harp",
+         "shell_cmd": "/Users/Hak/Repositories/repairkid.com/build.sh"
+     }
+ ]
+}

@@ -1,0 +1,212 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"page",
+				"pageSize"
+			],
+			[
+				"remin",
+				"reminder2"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 347.0,
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 167.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Hak/Repositories/repairkid.com"
+	],
+	"file_history":
+	[
+		"/Users/Hak/Downloads/SublimeCommandOnSave-master/README.md",
+		"/Users/Hak/Library/Application Support/Sublime Text 3/Packages/LESS/LESS.sublime-settings",
+		"/Users/Hak/Repositories/repairkid.com/_harp/main.less",
+		"/Users/Hak/Repositories/repairkid.com/_harp/index.jade",
+		"/Users/Hak/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Hak/Repositories/CodeStars2014/samples/Creating Application Factories-Services/Begin/CustomerManagerStandard/CustomerManager/app/services/authService.js",
+		"/usr/local/lib/pkgconfig/libusb-1.0.pc",
+		"/usr/local/lib/dtrace/node.d",
+		"/Users/Hak/Downloads/LabCode/Code/Samples/CustomerManager/CustomerManager/app/views/login.html",
+		"/Users/Hak/Repositories/CodeStars2014/samples/Creating Application Factories-Services/Begin/CustomerManagerStandard/CustomerManager/app.js",
+		"/Users/Hak/Repositories/CodeStars2014/samples/Creating Application Factories-Services/Begin/CustomerManagerStandard/CustomerManager/test/lib/angular-route.js",
+		"/Users/Hak/Repositories/CodeStars2014/samples/Creating Application Factories-Services/Begin/CustomerManagerStandard/.nuget/NuGet.targets",
+		"/Users/Hak/Repositories/CodeStars2014/samples/Creating Application Factories-Services/Begin/CustomerManagerStandard/.nuget/NuGet.Config",
+		"/Users/Hak/Repositories/CodeStars2014/samples/Unit Testing AngularJS Components/End/test/unit/controllersSpec.js",
+		"/Users/Hak/Repositories/CodeStars2014/samples/Unit Testing AngularJS Components/Begin/test/controllerSpec.js",
+		"/Users/Hak/Repositories/repairkid.com/app/views/contact.html",
+		"/Users/Hak/Repositories/repairkid.com/app/scripts/controllers/contact.js",
+		"/Users/Hak/Repositories/repairkid.com/app/views/main.html",
+		"/Users/Hak/Repositories/repairkid.com/app/index.html",
+		"/Users/Hak/Repositories/repairkid.com/app/scripts/app.js"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 99.0,
+		"where_history":
+		[
+			"/Users/Hak/Downloads/themeforest-8748103-pivot-multipurpose-template-with-page-builder/Pivot 1.0.0/js"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\"img/",
+			"gif",
+			"png",
+			"img",
+			"  "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"/img/",
+			"    "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "repairkid.com.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 138.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
