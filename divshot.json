@@ -1,0 +1,6 @@
+{
+  "name": "repairkid",
+  "root": "www",
+  "clean_urls": true,
+  "error_page": "error.html"
+}
