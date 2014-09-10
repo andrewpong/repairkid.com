@@ -125,16 +125,16 @@
 
 // Fonts
 
-.font-body{ font-family: "Source Sans Pro","Helvetica Neue", Helvetica, Arial, sans-serif; }
-.font-heading{ font-family: "Source Sans Pro","Helvetica Neue", Helvetica, Arial, sans-serif; }
+.font-body{ font-family: @font-family-sans-serif; }
+.font-heading{ font-family: @font-family-sans-serif; }
 
 //
 // Type & Global
 // --------------------------------------------------
 
-body{ .font-body; -webkit-font-smoothing: antialiased; color: @color-text; font-size: 14px; line-height: 24px; }
+body{ .font-body; -webkit-font-smoothing: antialiased; color: @color-text; font-size: @font-size-base; line-height: 24px; }
 h1,h2,h3,h4,h5,h5,h6{ .font-heading; font-weight: 700; color: @color-heading; margin: 0px; }
-.alt-font{ font-family: "Source Sans Pro","Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: bold; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+.alt-font{ font-family: @font-family-sans-serif; font-weight: bold; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
 ul{ list-style: none; padding: 0px; }
 a:hover{ text-decoration: none; }
 .pointer{ cursor: pointer !important; }
@@ -145,13 +145,13 @@ img{ max-width: 100%; }
 .jumbo-h1{ font-size: 40px; line-height: 56px; font-weight: 600; margin-bottom: 64px; }
 .standard-h1{ font-size: 32px; line-height: 48px; margin-bottom: 48px; }
 
-h1{ .standard-h1; }
-h2{ font-size: 28px; line-height: 40px; }
-h3{ font-size: 26px; line-height: 32px; }
-h5{ font-size: 18px; font-weight: 600; margin-bottom: 16px; }
-h6{ font-size: 16px; font-weight: 600; margin-bottom: 16px; }
+h1{ font-size: @font-size-h1; .standard-h1; }
+h2{ font-size: @font-size-h2; line-height: 40px; }
+h3{ font-size: @font-size-h3; line-height: 32px; }
+h5{ font-size: @font-size-h5; font-weight: 600; margin-bottom: 16px; }
+h6{ font-size: @font-size-h6; font-weight: 600; margin-bottom: 16px; }
 
-strong{ font-weight: 600; }
+strong{ font-weight: 700; }
 
 p{ font-size: 14px; line-height: 24px; }
 p.lead{ font-size: 16px; line-height: 30px; font-weight: normal; }
