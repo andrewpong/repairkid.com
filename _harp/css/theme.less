@@ -308,18 +308,26 @@ section:nth-of-type(even){ background: @color-bg-primary; }
 
 nav hr{ border: none; border-top: 1px solid rgba(255,255,255,0.3); position: relative; bottom: 2px; }
 
-.has-dropdown{ bottom: 3px;  }
-.has-dropdown:after{ 
-	font-family: ElegantIcons;
-	speak: none;
-	font-style: normal;
-	font-weight: 400;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	content: "\33";
-	color: @color-text;
+
+.navbar-brand {
+  float: left;
+  // padding: @navbar-padding-vertical @navbar-padding-horizontal;
+  font-size: @font-size-h1;
+  line-height: @line-height-computed;
+  height: @navbar-height;
+  color: @gray-darker;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  @media (min-width: @grid-float-breakpoint) {
+    .navbar > .container &,
+    .navbar > .container-fluid & {
+      margin-left: -@navbar-padding-horizontal;
+    }
+  }
 }
 
 .mobile-toggle{ display: none; }
