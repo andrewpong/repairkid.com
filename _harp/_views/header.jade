@@ -16,25 +16,6 @@ body
   .nav-container
   nav.top-bar
     .container
-        .navbar-header
-          button.navbar-toggle(type="button", data-toggle="collapse", data-target=".bs-navbar-collapse")
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand(href="../") Bootstrap
-        nav.collapse.navbar-collapse.bs-navbar-collapse(role="navigation")
-          ul.nav.navbar-nav
-            li
-              a(href="../getting-started") Getting started
-            li
-              a(href="../css") CSS
-            li
-              a(href="../components") Components
-            li
-              a(href="../javascript") JavaScript
-            li
-              a(href="../customize") Customize
       .row.utility-menu
         .col-sm-12
           .utility-inner.clearfix
@@ -45,6 +26,58 @@ body
             //  a.btn.btn-primary.login-button.btn-xs(href="login.html") Login
             //  a.btn.btn-primary.btn-filled.btn-xs(href="#") Signup
       // end of row
+      .row.nav-menu
+        .col-sm-4.columns
+          a(href="index.html").navbar-brand RepairKid
+        .col-sm-6.columns
+          ul.menu
+            li
+              a(href="/") Home
+            li
+              a(href="/about/") About
+            li.has-dropdown
+              a(href="#") Blog
+              ul.subnav
+                li
+                  a(href="blog.html") Blog Post
+                li
+                  a(href="blog-single.html") Article Single
+                li
+                  a(href="blog-single-2.html") Article Single 2
+            li.has-dropdown
+              a(href="#") Projects
+              ul.subnav
+                li
+                  a(href="projects.html") Projects Fullwidth
+                li
+                  a(href="projects-2.html") Projects Contained
+                li
+                  a(href="project-single-2.html") Project Single
+                li
+                  a(href="project-single.html") Project Single 2
+            li.has-dropdown
+              a(href="#") Contact
+              ul.subnav
+                li
+                  a(href="contact-3.html") Large Map
+                li
+                  a(href="contact-2.html") Map with form
+                li
+                  a(href="contact.html") Header with form
+                li
+                  a(href="contact-4.html") Fullscreen photo
+        .col-sm-2.columns.text-right
+          ul.social-icons.text-right
+            li
+              a(href="#")
+                i.icon.social_twitter
+            li
+              a(href="#")
+                i.icon.social_facebook
+      // end of row
+      .mobile-toggle
+        i.icon.icon_menu
+    // end of container
 
 
 
