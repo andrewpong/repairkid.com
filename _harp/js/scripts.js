@@ -343,11 +343,13 @@ $(window).load(function(){
 	});
 	
 	// Instagram Feed
-
-    jQuery.fn.spectragram.accessData = {
-        accessToken: '1406933036.fedaafa.feec3d50f5194ce5b705a1f11a107e0b',
-        clientID: 'fedaafacf224447e8aef74872d3820a1'
-    };
+	
+	if($('.instafeed').length){
+		jQuery.fn.spectragram.accessData = {
+			accessToken: '1406933036.fedaafa.feec3d50f5194ce5b705a1f11a107e0b',
+			clientID: 'fedaafacf224447e8aef74872d3820a1'
+		};
+	}
 
     $('.instafeed').each(function () {
         $(this).children('ul').spectragram('getUserFeed', {
