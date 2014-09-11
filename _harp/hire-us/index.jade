@@ -23,12 +23,26 @@ section.hero-divider
                 .col-sm-12.text-center
                   h1 Schedule an appointment
               // end of row
+              // Button trigger modal
+              .row
+                button.btn.btn-primary.btn-lg(data-toggle="modal", data-target="#myModal")
+                  | Launch demo modal
+                // Modal
+                #myModal.modal.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+                  .modal-dialog
+                    .modal-content
+                      .modal-body
+                        // Start Square Appointments Embed code
+                        script(src="https://squareup.com/appointments/buyer/widget/42833d1d-9aa6-4514-bd72-e3ccd78bf715.js")
+                        // End Square Appointments Embed code
+                      .modal-footer
+                        button.btn.btn-default(type="button", data-dismiss="modal") Close
               //- .row.text-center.appointment-sm
               //-   script(src="https://squareup.com/appointments/buyer/widget/9824ce67-67f5-4997-bc86-94371e71e8bf.js")
               //- .row.text-center.appointment-md
               //-   script(src="https://squareup.com/appointments/buyer/widget/42833d1d-9aa6-4514-bd72-e3ccd78bf715.js")
-              .row.text-center
-                script(src="https://squareup.com/appointments/buyer/widget/614b4150-962c-4b64-b6b9-652107d77e22.js")
+              //- .row.text-center
+              //-   script(src="https://squareup.com/appointments/buyer/widget/614b4150-962c-4b64-b6b9-652107d77e22.js")
               // end of row
             // end of individual feature content
             li.clearfix
