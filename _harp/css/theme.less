@@ -1037,6 +1037,14 @@ input[type="submit"]{ -webkit-appearance: none; .btn; .btn-primary; max-width: 1
 iframe.mail-list-form{ display: none !important; }
 
 //
+// Appointment
+// --------------------------------------------------
+
+    .appointment-sm { display: none; }
+    .appointment-md { display: none; }
+    .appointment-lg { display: block; }
+
+//
 // Footers
 // --------------------------------------------------
 
@@ -1205,6 +1213,12 @@ and (max-width : 767px) {
     .pricing-table{ margin-bottom: 16px; border-radius: 25px !important; border: 2px solid rgba(255,255,255,.2) !important; }
     
     .pricing-2{ display: none; }
+
+    // Appointment Calendar
+
+    .appointment-sm { display: block; }
+    .appointment-md { display: none; }
+    .appointment-lg { display: none; }
     
     // Footers
     
@@ -1367,8 +1381,13 @@ and (orientation : portrait) {
     .pricing-tables .no-pad-right{ padding-right: 15px; }
     .pricing-table{ margin-bottom: 30px; border-radius: 25px !important; border: 2px solid rgba(255,255,255,.2) !important; }
     
-    // Footers
+    // Appointment Calendar
+
+    .appointment-sm { display: none; }
+    .appointment-md { display: block; }
+    .appointment-lg { display: none; }
     
+    // Footers    
     footer.details .social-icons li{ margin-bottom: 16px; }
     
     // Blog
