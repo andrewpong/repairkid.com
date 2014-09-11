@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "${project_path:${folder}}"
+echo ${project_path:${folder}}
 echo "Compiling with harp to /Users/Hak/Repositories/repairkid.com/www/..."
 harp compile /Users/Hak/Repositories/repairkid.com/_harp -o /Users/Hak/Repositories/repairkid.com/www
 echo "Compiling complete! Committing to GitHub..."
