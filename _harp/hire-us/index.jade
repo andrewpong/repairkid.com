@@ -3,18 +3,9 @@ section
     img.background-image(alt="Poster Image For Mobiles", src="/img/hero6.jpg")
   .container.align-vertical
     .row
-      button.btn.btn-primary.btn-lg(data-toggle="modal", data-target="#myModal")
-        | Launch demo modal
-      // Modal
-      #myModal.modal.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
-        .modal-dialog.modal-lg
-          .modal-content
-            .modal-body
-              // Start Square Appointments Embed code
-              script(src="https://squareup.com/appointments/buyer/widget/42833d1d-9aa6-4514-bd72-e3ccd78bf715.js")
-              // End Square Appointments Embed code
-            .modal-footer
-              button.btn.btn-default(type="button", data-dismiss="modal") Close
+      // Start Square Appointments Embed code
+      script(src="https://squareup.com/appointments/buyer/widget/42833d1d-9aa6-4514-bd72-e3ccd78bf715.js")
+      // End Square Appointments Embed code
     //- .row.text-center.appointment-sm
     //-   script(src="https://squareup.com/appointments/buyer/widget/9824ce67-67f5-4997-bc86-94371e71e8bf.js")
     //- .row.text-center.appointment-md
