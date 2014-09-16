@@ -1,7 +1,7 @@
 {
   "globals": {
     "title": "Bay Area Computer Repair",
-    "company": RepairKid,
+    "company": "RepairKid",
     "description": "Certified Computer Repair in the San Francisco Bay Area",
     "email": "hello@repairkid.com",
     "copyright": "© Copright 2014 RepairKid"
