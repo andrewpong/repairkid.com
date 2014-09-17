@@ -19,46 +19,47 @@
  
 // Convert all variables to em
  
-@font-size-small:  floor(0.750 + @font-unit); // 12px
-@font-size-base:   floor(1.000 + @font-unit); // 16px
-@font-size-medium: floor(1.250 + @font-unit); // 20px
-@font-size-large:  floor(1.500 + @font-unit); // 24px
-@font-size-h1:     floor(2.000 + @font-unit); // 32px
-@font-size-h2:     floor(1.750 + @font-unit); // 28px
-@font-size-h3:     floor(1.500 + @font-unit); // 24px
-@font-size-h4:     floor(1.250 + @font-unit); // 20px
-@font-size-h5:     floor(1.000 + @font-unit); // 16px
-@font-size-h6:     floor(0.875 + @font-unit); // 14px
+@font-size-small:  0.750 + @font-unit; // 12px
+@font-size-base:   1.000 + @font-unit; // 16px
+@font-size-medium: 1.250 + @font-unit; // 20px
+@font-size-large:  1.500 + @font-unit; // 24px
+ 
+@font-size-h1:     2.000 + @font-unit; // 32px
+@font-size-h2:     1.750 + @font-unit; // 28px
+@font-size-h3:     1.500 + @font-unit; // 24px
+@font-size-h4:     1.250 + @font-unit; // 20px
+@font-size-h5:     1.000 + @font-unit; // 16px
+@font-size-h6:     0.875 + @font-unit; // 14px
 
 
  
-@line-height-computed:    floor(@font-size-base * @line-height-base);
+@line-height-computed:    (@font-size-base * @line-height-base);
  
-@padding-base-vertical:     floor((6px / @font-size-root) + @font-unit);
-@padding-base-horizontal:   floor((12px / @font-size-root) + @font-unit);
+@padding-base-vertical:     ((6px / @font-size-root) + @font-unit);
+@padding-base-horizontal:   ((12px / @font-size-root) + @font-unit);
  
-@padding-large-vertical:    floor((10px / @font-size-root) + @font-unit);
-@padding-large-horizontal:  floor((16px / @font-size-root) + @font-unit);
+@padding-large-vertical:    ((10px / @font-size-root) + @font-unit);
+@padding-large-horizontal:  ((16px / @font-size-root) + @font-unit);
  
-@padding-small-vertical:    floor((5px / @font-size-root) + @font-unit);
-@padding-small-horizontal:  floor((10px / @font-size-root) + @font-unit);
+@padding-small-vertical:    ((5px / @font-size-root) + @font-unit);
+@padding-small-horizontal:  ((10px / @font-size-root) + @font-unit);
  
-@padding-xs-vertical:       floor((1px / @font-size-root) + @font-unit);
-@padding-xs-horizontal:     floor((5px / @font-size-root) + @font-unit);
+@padding-xs-vertical:       ((1px / @font-size-root) + @font-unit);
+@padding-xs-horizontal:     ((5px / @font-size-root) + @font-unit);
  
-@border-radius-base:        floor((4px / @font-size-root) + @font-unit);
-@border-radius-large:       floor((6px / @font-size-root) + @font-unit);
-@border-radius-small:       floor((3px / @font-size-root) + @font-unit);
+@border-radius-base:        ((4px / @font-size-root) + @font-unit);
+@border-radius-large:       ((6px / @font-size-root) + @font-unit);
+@border-radius-small:       ((3px / @font-size-root) + @font-unit);
  
-@caret-width-base:          floor((4px / @font-size-root) + @font-unit);
-@caret-width-large:         floor((5px / @font-size-root) + @font-unit);
+@caret-width-base:          ((4px / @font-size-root) + @font-unit);
+@caret-width-large:         ((5px / @font-size-root) + @font-unit);
  
 //** Default `.form-control` height
-@input-height-base:         floor((@line-height-computed + (@padding-base-vertical * 2)));
+@input-height-base:         (@line-height-computed + (@padding-base-vertical * 2));
 //** Large `.form-control` height
-@input-height-large:        floor(((@font-size-large * @line-height-large) + (@padding-large-vertical * 2)));
+@input-height-large:        ((@font-size-large * @line-height-large) + (@padding-large-vertical * 2));
 //** Small `.form-control` height
-@input-height-small:        floor(((@font-size-small * @line-height-small) + (@padding-small-vertical * 2));
+@input-height-small:        ((@font-size-small * @line-height-small) + (@padding-small-vertical * 2));
 
 // Set font family
 
