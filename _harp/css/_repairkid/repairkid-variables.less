@@ -9,8 +9,12 @@
  * Use em or rem font-size in Bootstrap 3
  */
 
+// Optimized Typography for 16px Font in 960px-wide Setting
+// Font Size: 16 Line Height: 28 Content Width: 960 Approx. CPL: 136 Font: 
+
 @root-size: 16px;
- 
+@font-size-base: @root-size:
+@line-height-base: 1.75; // 28/16
 @font-size-root: @root-size;
 @font-unit: 0rem; // Pick em or rem here
 @font-padding: @root-size * 2;
@@ -31,10 +35,6 @@
 @font-size-h5:     1.000 + @font-unit; // 16px
 @font-size-h6:     0.875 + @font-unit; // 14px
 
-
- 
-@line-height-computed:    (@font-size-base * @line-height-base);
- 
 @padding-base-vertical:     ((6px / @font-size-root) + @font-unit);
 @padding-base-horizontal:   ((12px / @font-size-root) + @font-unit);
  
