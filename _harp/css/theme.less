@@ -217,13 +217,28 @@ footer {
 footer.short {
 	color: #fff;
 }
+footer.short .sub {
+	opacity: 0.5;
+	display: inline-block;
+	margin-right: @font-padding;
+	position: relative;
+}
+footer.short .attribution {
+	opacity: 0.3;
+	display: inline-block;
+	margin-right: @font-padding;
+	position: relative;
+	font-size: @font-size-small;
+	line-height: @line-height-computed;
+}
 footer.short ul {
 	display: inline-block;
 	margin: 0px;
+	line-height: @line-height-computed;
 }
 footer.short ul li {
 	float: left;
-	margin-right: 32px;
+	margin-right: @font-padding;
 }
 footer.short ul li a {
 	color: #fff;
@@ -232,18 +247,6 @@ footer.short ul li a {
 footer.short .social-icons li a {
 	color: #fff;
 	opacity: 1;
-}
-footer.short .sub {
-	opacity: 0.5;
-	display: inline-block;
-	position: relative;
-	margin-right: 32px;
-}
-footer.short .attribution {
-	font-size: @font-size-small;
-	opacity: 0.375;
-	display: inline-block;
-	position: relative;
 }
 //
 // Smartphones
