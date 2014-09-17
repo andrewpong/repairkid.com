@@ -33,13 +33,7 @@ body {
 	font-size: @font-size-base;
 	line-height: @line-height-computed;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h5, h6 {
 	.font-heading;
 	font-weight: 700;
 	color: @color-heading;
@@ -117,13 +111,11 @@ p.lead {
 	line-height: @line-height-computed;
 	height: @navbar-height;
 	color: @gray-darker;
-	&:hover,
-	&:focus {
+	&:hover, &:focus {
 		text-decoration: none;
 	}
 	@media (min-width:@grid-float-breakpoint) {
-		.navbar > .container &,
-		.navbar > .container-fluid & {
+		.navbar > .container &, .navbar > .container-fluid & {
 			margin-left: -@navbar-padding-horizontal;
 		}
 	}
@@ -217,6 +209,11 @@ header.title .sub {
 //
 // Footers
 // --------------------------------------------------
+
+footer {
+	padding-top: @standard-space;
+	padding-bottom: @standard-space;
+}
 footer.short {
 	color: #fff;
 }
@@ -226,7 +223,7 @@ footer.short ul {
 }
 footer.short ul li {
 	float: left;
-	margin-right: @font-unit * 2rem;
+	margin-right: 32px;
 }
 footer.short ul li a {
 	color: #fff;
@@ -240,6 +237,7 @@ footer.short .sub {
 	opacity: 0.5;
 	display: inline-block;
 	position: relative;
+	margin-right: 32px;
 }
 footer.short .attribution {
 	font-size: @font-size-small;
