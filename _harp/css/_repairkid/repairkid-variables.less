@@ -20,19 +20,19 @@
 @font-family-base:        @font-family-sans-serif;
 
 @font-size-root:          16px;
-@font-size-small:         ceil((@font-size-base * 0.875));
-@font-size-base:          ceil((@font-size-base * 1.000));
-@font-size-medium:        ceil((@font-size-base * 1.250));
-@font-size-large:         ceil((@font-size-base * 1.500));
+@font-size-small:         ceil((@font-size-root * 0.875));
+@font-size-base:          ceil((@font-size-root * 1.000));
+@font-size-medium:        ceil((@font-size-root * 1.250));
+@font-size-large:         ceil((@font-size-root * 1.500));
 // @font-unit:               0rem; // Pick em or rem here
-@font-padding:            @root-size * 2;
+@font-padding:            @font-size-root * 2;
 
-@font-size-h1:            floor((@font-size-base * 2.000)); // ~36px
-@font-size-h2:            floor((@font-size-base * 1.750)); // ~30px
-@font-size-h3:             ceil((@font-size-base * 1.500)); // ~24px
-@font-size-h4:             ceil((@font-size-base * 1.250)); // ~18px
-@font-size-h5:             ceil((@font-size-base * 1.000)); // ~18px
-@font-size-h6:             ceil((@font-size-base * 0.875)); // ~12px
+@font-size-h1:            floor((@font-size-root * 2.000)); // ~36px
+@font-size-h2:            floor((@font-size-root * 1.750)); // ~30px
+@font-size-h3:             ceil((@font-size-root * 1.500)); // ~24px
+@font-size-h4:             ceil((@font-size-root * 1.250)); // ~18px
+@font-size-h5:             ceil((@font-size-root * 1.000)); // ~18px
+@font-size-h6:             ceil((@font-size-root * 0.875)); // ~12px
 
 //** Unit-less `line-height` for use in components like buttons.
 @line-height-base: 1.75; // 28/16
