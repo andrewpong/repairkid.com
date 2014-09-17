@@ -12,6 +12,7 @@
 // Spacing Standards (base number 8)
 @standard-space: @font-size-root * 3.75;
 @standard-radius: 0px;
+@standard-text-margin: 0.25em;
 // Shapes
 //
 // Template Mixins
@@ -38,6 +39,7 @@ h1, h2, h3, h4, h5, h5, h6 {
 	font-weight: 700;
 	color: @color-heading;
 	margin: 0px;
+	margin-bottom: @standard-text-margin;
 }
 .alt-font {
 	font-family: @font-family-sans-serif;
@@ -49,26 +51,27 @@ h1, h2, h3, h4, h5, h5, h6 {
 h1 {
 	font-size: @font-size-h1;
 	.standard-h1;
+	margin-bottom: @standard-text-margin;
 }
 h2 {
 	font-size: @font-size-h2;
 	font-weight: 600;
-	margin-bottom: 1em;
+	margin-bottom: @standard-text-margin;
 }
 h3 {
 	font-size: @font-size-h3;
 	font-weight: 600;
-	margin-bottom: 1em;
+	margin-bottom: @standard-text-margin;
 }
 h5 {
 	font-size: @font-size-h5;
 	font-weight: 600;
-	margin-bottom: 1em;
+	margin-bottom: @standard-text-margin;
 }
 h6 {
 	font-size: @font-size-h6;
 	font-weight: 600;
-	margin-bottom: 1em;
+	margin-bottom: @standard-text-margin;
 }
 strong {
 	font-weight: 700;
