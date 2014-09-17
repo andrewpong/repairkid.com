@@ -106,20 +106,25 @@ p.lead {
 // --------------------------------------------------
 .navbar-brand {
 	float: left;
-	padding: 0;
+	padding: @navbar-padding-vertical @navbar-padding-horizontal;
 	font-size: @font-size-h1;
 	line-height: @line-height-computed;
 	height: @navbar-height;
 	color: @gray-darker;
-	&:hover, &:focus {
-		text-decoration: none;
-	}
-	@media (min-width:@grid-float-breakpoint) {
-		.navbar > .container &, .navbar > .container-fluid & {
-			margin-left: -@navbar-padding-horizontal;
-		}
-	}
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  @media (min-width: @grid-float-breakpoint) {
+    .navbar > .container &,
+    .navbar > .container-fluid & {
+      margin-left: -@navbar-padding-horizontal;
+    }
+  }
 }
+
+
 .utility-menu {
 	margin-top: 10px;
 }
