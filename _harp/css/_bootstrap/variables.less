@@ -19,16 +19,6 @@
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
 
-@black-10: darken(#fff, 10%);
-@black-20: darken(#fff, 20%);
-@black-30: darken(#fff, 30%);
-@black-40: darken(#fff, 40%);
-@black-50: darken(#fff, 50%);
-@black-60: darken(#fff, 60%);
-@black-70: darken(#fff, 70%);
-@black-80: darken(#fff, 80%);
-@black-90: darken(#fff, 90%);
-
 
 //== Scaffolding
 //
@@ -49,23 +39,22 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  "Source Sans Pro","Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          16px;
-@font-size-large:         ceil((@font-size-base  * 1.250)); // ~18px
-@font-size-medium:        ceil((@font-size-base  * 0.875)); // ~18px
-@font-size-small:         ceil((@font-size-base  * 0.850)); // ~12px
+@font-size-base:          14px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
-@font-size-h1:            floor((@font-size-base * 2.600)); // ~36px
-@font-size-h2:            floor((@font-size-base * 2.150)); // ~30px
-@font-size-h3:            ceil((@font-size-base  * 1.700)); // ~24px
-@font-size-h4:            ceil((@font-size-base  * 1.250)); // ~18px
+@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
 @font-size-h5:            @font-size-base;
-@font-size-h6:            ceil((@font-size-base  * 0.8500)); // ~12px
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
 
 //** Unit-less `line-height` for use in components like buttons.
 @line-height-base:        1.428571429; // 20/14
@@ -346,7 +335,7 @@
 //##
 
 // Basics of a navbar
-@navbar-height:                    35px;
+@navbar-height:                    50px;
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
