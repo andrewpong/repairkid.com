@@ -1,0 +1,35 @@
+.nav-container
+  nav.top-bar
+    .container
+      .row.utility-menu
+        .col-sm-12
+          .utility-inner.clearfix
+            span.alt-font
+              i.icon.icon_mail
+              | #{email}
+      // end of row
+      .row.nav-menu
+        .col-xs-12.col-sm-3
+          a(href="index.html").navbar-brand.logo #{company}
+        .col-xs-12.col-sm-7
+          ul.menu
+            li
+              a(href="/") Home
+            li
+              a(href="/services/") Services
+            li
+              a(href="/about/") About
+            li
+              a(href="/contact/") Contact
+        .col-xs-12.col-sm-2
+          ul.social-icons.text-right
+            li
+              a(href="#")
+                i.icon.social_twitter
+            li
+              a(href="#")
+                i.icon.social_facebook
+      // end of row
+      .mobile-toggle
+        i.icon.icon_menu
+    // end of container

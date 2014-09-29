@@ -1,0 +1,447 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"text-center"
+			],
+			[
+				"appo",
+				"appointment"
+			],
+			[
+				"app",
+				"appointment"
+			],
+			[
+				"icon",
+				"icon_menu"
+			],
+			[
+				"font-size",
+				"font-size-base"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"Ha",
+				"Hak"
+			],
+			[
+				"page",
+				"pageSize"
+			],
+			[
+				"remin",
+				"reminder2"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "repairkid.com harp",
+	"command_palette":
+	{
+		"height": 147.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove p",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			]
+		],
+		"width": 380.0
+	},
+	"console":
+	{
+		"height": 167.0,
+		"history":
+		[
+			"harp compile /Users/Hak/Repositories/repairkid.com/_harp -o /Users/Hak/Repositories/repairkid.com/www",
+			"pwd",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Hak/Repositories/repairkid.com",
+		"/Users/Hak/Repositories/repairkid.com/_harp",
+		"/Users/Hak/Repositories/repairkid.com/_harp/_views",
+		"/Users/Hak/Repositories/repairkid.com/_harp/about",
+		"/Users/Hak/Repositories/repairkid.com/_harp/contact",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/_repairkid",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/pivot",
+		"/Users/Hak/Repositories/repairkid.com/_harp/hire-us",
+		"/Users/Hak/Repositories/repairkid.com/_harp/privacy",
+		"/Users/Hak/Repositories/repairkid.com/_harp/services",
+		"/Users/Hak/Repositories/repairkid.com/_harp/terms"
+	],
+	"file_history":
+	[
+		"/Users/Hak/Repositories/repairkid.com/_harp/privacy/index.jade",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/_repairkid/repairkid-variables.less",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/_bootstrap/variables.less",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/pivot/_pivot.less",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/theme.less",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/_bootstrap/pager.less",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/_bootstrap/navbar.less",
+		"/Users/Hak/Repositories/repairkid.com/_harp/about.jade",
+		"/Users/Hak/Repositories/repairkid.com/_harp/_views/footer.jade",
+		"/Users/Hak/Repositories/repairkid.com/_harp/_views/Jade.tmpl",
+		"/Users/Hak/Repositories/repairkid.com/_harp/about/index.jade",
+		"/Users/Hak/Library/Application Support/Sublime Text 3/Packages/User/FileHeader.sublime-settings",
+		"/Users/Hak/Library/Application Support/Sublime Text 3/Packages/FileHeader/FileHeader.sublime-settings",
+		"/Users/Hak/Repositories/repairkid.com/_harp/_views/header.jade",
+		"/Users/Hak/Repositories/repairkid.com/_harp/fonts/ElegantIcons.ttf",
+		"/Users/Hak/Repositories/repairkid.com/_harp/privacy/p.less",
+		"/Users/Hak/Repositories/repairkid.com/_harp/_views/temp.html",
+		"/Users/Hak/Repositories/repairkid.com/_harp/sitemap.jade",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/repairkid-theme.less",
+		"/Users/Hak/Repositories/repairkid.com/_harp/sitemap.xml.jade",
+		"/Users/Hak/Repositories/repairkid.com/_harp/index.jade",
+		"/Users/Hak/Repositories/repairkid.com/_harp/_harp.json",
+		"/Users/Hak/Repositories/repairkid.com/_harp/_data.json",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/_oldtheme.less",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/bootstrap.less",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/_bootstrap-refence.less",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/pivot/elegant-icons.min.css",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/pivot/line-icons.min.css",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/pivot/flexslider.css",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/pivot/lightbox.min.css",
+		"/Users/Hak/Documents/junk.css",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/pivot/pivot.less",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/pivot/_less/theme.less",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/_bootstrap/bootstrap.less",
+		"/Users/Hak/Documents/test.css",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/_repairkid/repairkid.variables.less",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/repairkid.theme.less",
+		"/Users/Hak/Repositories/repairkid.com/_harp/services/index.jade",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/line-icons.min.css",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/_bootstrap/mixins/tab-focus.less",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/_bootstrap/input-groups.less",
+		"/Users/Hak/Repositories/repairkid.com/www/index.html",
+		"/Users/Hak/Repositories/repairkid.com/_harp/_layout.jade",
+		"/Users/Hak/Repositories/repairkid.com/_build.sh",
+		"/Users/Hak/Repositories/repairkid.com/_harp/about/_data.json",
+		"/Users/Hak/Repositories/repairkid.com/_harp/video/video.ogv",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/_bootstrap/mixins/responsive-visibility.less",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/_bootstrap/print.less",
+		"/Users/Hak/Repositories/repairkid.com/_harp/hire-us/index.jade",
+		"/Users/Hak/Repositories/repairkid.com/_harp/hire-us/_data.json",
+		"/Users/Hak/Repositories/repairkid.com/_harp/schedule-an-appointment/index.jade",
+		"/Users/Hak/Repositories/repairkid.com/_harp/schedule-an-appointment/_layout.jade",
+		"/Users/Hak/Repositories/repairkid.com/_harp/contact/_data.json",
+		"/Users/Hak/Repositories/repairkid.com/_harp/services/_data.json",
+		"/Users/Hak/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/Hak/Repositories/repairkid.com/repairkid.com.sublime-packagecontrol",
+		"/Users/Hak/Repositories/repairkid.com/repairkid.com.sublime-project",
+		"/Users/Hak/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Hak/Library/Application Support/Sublime Text 3/Packages/Color Highlighter/ColorHighlighter.sublime-settings",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/_bootstrap/mixins/table-row.less",
+		"/Users/Hak/Repositories/repairkid.com/_harp/js/scripts.js",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/aquatica.less",
+		"/Users/Hak/Repositories/repairkid.com/_harp/css/flexslider.css",
+		"/Users/Hak/Repositories/repairkid.com/_harp/js/jquery.flexslider.js",
+		"/Users/Hak/Repositories/repairkid.com/_harp/_views/navigation.jade",
+		"/Users/Hak/Repositories/repairkid.com/_harp/js/bootstrap.js",
+		"/Users/Hak/Repositories/repairkid.com/_harp/404.jade",
+		"/Users/Hak/Repositories/repairkid.com/_harp/video/video.mp4",
+		"/Users/Hak/Repositories/repairkid.com/_harp/main.less",
+		"/Users/Hak/Repositories/repairkid.com/build.sh",
+		"/Users/Hak/Library/Application Support/Sublime Text 3/Packages/SublimeOnSaveBuild/README.md",
+		"/Users/Hak/Repositories/repairkid.com/_harp/_navigation.jade",
+		"/Users/Hak/Library/Application Support/Sublime Text 3/Packages/User/SublimeOnSaveBuild.sublime-settings",
+		"/Users/Hak/Repositories/repairkid.com/_harp/_header.jade",
+		"/Users/Hak/Repositories/repairkid.com/_harp/_footer.jade",
+		"/Users/Hak/Library/Application Support/Sublime Text 3/Packages/Shell Turtlestein/Shell Turtlestein.sublime-settings",
+		"/Users/Hak/Library/Application Support/Sublime Text 3/Packages/User/ShellCommand.sublime-settings",
+		"/Users/Hak/Library/Application Support/Sublime Text 3/Packages/User/Shell Turtlestein.sublime-settings",
+		"/Users/Hak/Library/Application Support/Sublime Text 3/Packages/User/repairkid.com.sublime-build",
+		"/Users/Hak/Library/Application Support/Sublime Text 3/Packages/User/CommandOnSave.sublime-settings",
+		"/Users/Hak/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/Users/Hak/Library/Application Support/Sublime Text 3/Packages/ConvertToUTF8/ConvertToUTF8.sublime-settings",
+		"/Users/Hak/Library/Application Support/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
+		"/Users/Hak/Downloads/SublimeCommandOnSave-master/README.md",
+		"/Users/Hak/Library/Application Support/Sublime Text 3/Packages/LESS/LESS.sublime-settings",
+		"/Users/Hak/Repositories/CodeStars2014/samples/Creating Application Factories-Services/Begin/CustomerManagerStandard/CustomerManager/app/services/authService.js",
+		"/usr/local/lib/pkgconfig/libusb-1.0.pc",
+		"/usr/local/lib/dtrace/node.d",
+		"/Users/Hak/Downloads/LabCode/Code/Samples/CustomerManager/CustomerManager/app/views/login.html",
+		"/Users/Hak/Repositories/CodeStars2014/samples/Creating Application Factories-Services/Begin/CustomerManagerStandard/CustomerManager/app.js",
+		"/Users/Hak/Repositories/CodeStars2014/samples/Creating Application Factories-Services/Begin/CustomerManagerStandard/CustomerManager/test/lib/angular-route.js",
+		"/Users/Hak/Repositories/CodeStars2014/samples/Creating Application Factories-Services/Begin/CustomerManagerStandard/.nuget/NuGet.targets",
+		"/Users/Hak/Repositories/CodeStars2014/samples/Creating Application Factories-Services/Begin/CustomerManagerStandard/.nuget/NuGet.Config",
+		"/Users/Hak/Repositories/CodeStars2014/samples/Unit Testing AngularJS Components/End/test/unit/controllersSpec.js",
+		"/Users/Hak/Repositories/CodeStars2014/samples/Unit Testing AngularJS Components/Begin/test/controllerSpec.js",
+		"/Users/Hak/Repositories/repairkid.com/app/views/contact.html",
+		"/Users/Hak/Repositories/repairkid.com/app/scripts/controllers/contact.js",
+		"/Users/Hak/Repositories/repairkid.com/app/views/main.html",
+		"/Users/Hak/Repositories/repairkid.com/app/index.html",
+		"/Users/Hak/Repositories/repairkid.com/app/scripts/app.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 99.0,
+		"where_history":
+		[
+			"/Users/Hak/Downloads/themeforest-8748103-pivot-multipurpose-template-with-page-builder/Pivot 1.0.0/js"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			" - ",
+			"&#8211;",
+			"&#8221;",
+			"&#8220;",
+			"root",
+			"unit",
+			"\n	",
+			"inner",
+			"feature",
+			"line-height: ",
+			"brand",
+			"navbar",
+			"brand",
+			"<hr />/",
+			"<div class=\"one_line_col\">",
+			"footer",
+			"24px",
+			"\n}",
+			".sub ",
+			"../../img/",
+			"../../fonts/",
+			"fonts/",
+			"../img/",
+			"../fonts/",
+			"@import \"",
+			"@import ",
+			"//",
+			"//\n",
+			"variabl",
+			"@import \"",
+			"\n@",
+			"font-size: 16px;",
+			"font-size: 12px;",
+			"font-size: 18px;",
+			".sub ",
+			".sub",
+			"650px",
+			"650",
+			"@grid-float-breakpoint",
+			"h6",
+			"14px",
+			"0.7",
+			"slider",
+			"utility-me",
+			"50px",
+			"54p",
+			"height",
+			"text-right",
+			".columns",
+			"has-drop",
+			"11",
+			"font-fami",
+			"radius",
+			"text-white",
+			"raleway",
+			"\"raleway\", ",
+			"Open Sans",
+			"blur",
+			"\"img/",
+			"gif",
+			"png",
+			"img",
+			"  "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			" &mdash; ",
+			"- ",
+			"\"",
+			"<hr />",
+			"<hr />/",
+			"/img/",
+			"/fonts/",
+			"../../fonts/",
+			"../../img/",
+			"../../fonts/",
+			"@import \"_bootstrap/",
+			"@import \"\\_bootstrap\\",
+			"@import (reference) ",
+			"@import \"_bootstrap/",
+			"font-size: @font-size-base;",
+			"font-size: @font-size-small;",
+			"font-size: @font-size-large;",
+			"h3",
+			"",
+			"Source Sans Pro",
+			"\"/img/",
+			"    "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 134.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.settings_documentation_panel":
+	{
+		"height": 136.0
+	},
+	"project": "repairkid.com.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"pivo",
+				"_harp/css/pivot/_pivot.less"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 235.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

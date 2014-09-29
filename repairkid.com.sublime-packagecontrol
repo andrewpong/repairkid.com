@@ -1,0 +1,23 @@
+{
+	"installed_packages":
+	[
+		"BracketHighlighter",
+		"Color Highlighter",
+		"ConvertToUTF8",
+		"EasySettings",
+		"Emmet",
+		"Jade",
+		"JsFormat",
+		"LESS",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-jshint",
+		"SublimeLinter-json",
+		"Theme - Soda",
+		"Theme - Spacegray"
+	],
+	"repositories":
+	[
+		"https://github.com/klaascuvelier/SublimeCommandOnSave.git"
+	]
+}
