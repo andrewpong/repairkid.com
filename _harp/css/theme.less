@@ -191,7 +191,99 @@ header.title .sub {
 // Blog Sections
 // --------------------------------------------------
 
+/*!
+/*!
+// 13. Pricing
+// --------------------------------------------------*/
+.pricing-option {
+  overflow:hidden;
+  background:#f4f4f4;
+  -webkit-transform-style:preserve-3d;
+  -moz-transform-style:preserve-3d;
+  transform-style:preserve-3d;
+  position:relative;
+  padding:72px 0;
+  margin-bottom:30px;
+  transition:all .3s ease-out;
+  -webkit-transition:all .3s ease-out;
+  -moz-transition:all .3s ease-out
+}
 
+.pricing-option .dot {
+  position:absolute;
+  top:24px;
+  right:24px;
+  width:24px;
+  height:24px;
+  border-radius:50%;
+  background:#fff
+}
+
+.pricing-option:hover {
+  background:#ededed
+}
+
+@media all and (min-width:321px) o0p and (max-width:767px) and (orientation:landscape) {
+.pricing-options .col-sm-6 {
+  width:50%;
+  float:left
+}
+}
+
+.dollar,.price,.type {
+  font-weight:600;
+  color:#333;
+  font-size:64px
+}
+
+.dollar {
+  font-size:32px;
+  position:relative;
+  bottom:22px
+}
+
+.price {
+  line-height:1
+}
+
+.type {
+  display:block;
+  font-size:16px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  margin-top:12px
+}
+
+.plan-title {
+  display:block;
+  font-weight:600;
+  margin-bottom:12px;
+  font-size:16px;
+  color:#333
+}
+
+.pricing-option ul li {
+  color:#777
+}
+
+.pricing-option.emphasis {
+  background:#3498db;
+  color:#fff
+}
+
+.pricing-option.emphasis .type,.pricing-option.emphasis .dollar,.pricing-option.emphasis .price,.pricing-option.emphasis .plan-title,.pricing-option.emphasis ul li {
+  color:#fff!important
+}
+
+@media all and (max-width:991px) {
+.type {
+  margin-bottom:12px
+}
+
+.pricing-option {
+  text-align:center!important
+}
+}
 
 
 //
