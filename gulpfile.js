@@ -4,9 +4,9 @@ var uglify = require('gulp-uglify');
 
 
 gulp.task('uncss', function() {
-    gulp.src('www/**/*.html')
+    gulp.src('www')
       .pipe(uncss({
-          html: ['index.html']
+          html: ['*.html']
       }))
       .pipe(gulp.dest('dist'));
 });
