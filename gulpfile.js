@@ -3,12 +3,12 @@ var uncss = require('gulp-uncss');
 var uglify = require('gulp-uglify');
 
 
-gulp.task('default', function() {
-    return gulp.src('./www')
-        .pipe(uncss({
-            html: ['index.html']
-        }))
-        .pipe(gulp.dest('./dist'));
+gulp.task('uncss', function() {
+    gulp.src('www/**/*.html')
+      .pipe(uncss({
+          html: ['index.html']
+      }))
+      .pipe(gulp.dest('dist'));
 });
 
 gulp.task('compress', function() {
