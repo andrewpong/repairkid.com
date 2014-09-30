@@ -2,22 +2,23 @@
   footer.short.bg-secondary-1
     .container
       .row
-        .col-sm-10
-          span.sub #{copyright}
+        .col-sm-12
           ul
             li
-              a(href="/terms/") Terms of Use
+              span #{copyright}
+            //- li
+            //-   a(href="/terms/") Terms of Use
             li
               a(href="/privacy/") Privacy Policy
             li
-              a(href="/sitemap.html") Sitemap
-        .col-sm-2.text-right
-          ul.social-icons
-            li
-              a(href="#")
-                i.icon.social_twitter
-            li
-              a(href="#")
+              a(href="/sitemap.html") Site Map
+        //- .col-sm-2.text-right
+        //-   ul.social-icons
+        //-     li
+        //-       a(href="#")
+        //-         i.icon.social_twitter
+        //-     li
+        //-       a(href="#")
                 i.icon.social_facebook
       // end of row
       .row
@@ -26,17 +27,18 @@
             | Microsoft is a registered trademark of Microsoft Corporation in the United States and other countries. 
             | VMware is a registered trademark or trademark of VMware, Inc. in the United States and/or other jurisdictions. 
             | Apple and the Apple logo are  a trademark of Apple Inc., registered in the U.S. and other countries.
+            | Google and the Google logo are registered trademarks of Google Inc., used with permission.
       // end of row
     // end of container
-script(src="/js/jquery.js")
-script(src="/js/jquery.plugin.js")
-script(src="/js/bootstrap.js")
-script(src="/js/jquery.flexslider.js")
-script(src="/js/smooth-scroll.js")
-script(src="/js/skrollr.js")
-script(src="/js/scrollReveal.js")
-script(src="/js/isotope.js")
-script(src="/js/lightbox.js")
-script(src="/js/jquery.countdown.js")
+script(src="https://code.jquery.com/jquery-1.11.1.min.js")
+script(src="/js/jquery.plugin.min.js")
+script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js")
+script(src="/js/jquery.flexslider.min.js")
+script(src="/js/smoothscroll.min.js")
+script(src="/js/skrollr.min.js")
+script(src="/js/scrollreveal.min.js")
+script(src="/js/isotope.min.js")
 script(src="/js/scripts.js")
+//- script(src="/js/lightbox.js")
+//- script(src="/js/jquery.countdown.js")
 

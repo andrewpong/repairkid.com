@@ -1,0 +1,570 @@
+//
+// Load core variables and mixins
+// --------------------------------------------------
+// @import (reference) "../bootstrap.less";
+// @import "../pivot/_theme.less";
+
+
+// //
+// // Load core variables and mixins
+// // --------------------------------------------------
+// @import (reference) "../_bootstrap/variables.less";
+// @import (reference) "_bootstrap/mixins.less";
+
+/**
+ * Use em or rem font-size in Bootstrap 3
+ */
+
+// Optimized Typography for 16px Font in 960px-wide Setting
+// Font Size: 16 Line Height: 28 Content Width: 960 Approx. CPL: 136 Font: 
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+@font-family-sans-serif:  "Source Sans Pro","Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-base:        @font-family-sans-serif;
+
+@font-size-root:          16px;
+@font-size-small:         ceil((@font-size-root * 0.875));
+@font-size-base:          ceil((@font-size-root * 1.000));
+@font-size-medium:        ceil((@font-size-root * 1.250));
+@font-size-large:         ceil((@font-size-root * 1.500));
+// @font-unit:               0rem; // Pick em or rem here
+@font-padding:            @font-size-root * 2;
+
+@font-size-h1:            floor((@font-size-root * 2.000)); // ~36px
+@font-size-h2:            floor((@font-size-root * 1.750)); // ~30px
+@font-size-h3:             ceil((@font-size-root * 1.500)); // ~24px
+@font-size-h4:             ceil((@font-size-root * 1.250)); // ~18px
+@font-size-h5:             ceil((@font-size-root * 1.000)); // ~18px
+@font-size-h6:             ceil((@font-size-root * 0.875)); // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base: 1.75; // 28/16
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-root * @line-height-base)); // ~26px
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    inherit;
+@headings-font-weight:    500;
+@headings-line-height:    1.1;
+@headings-color:          inherit;
+ 
+// Convert all variables to em
+ 
+
+ 
+// @font-size-h1:     2.000 + @font-unit; // 32px
+// @font-size-h2:     1.750 + @font-unit; // 28px
+// @font-size-h3:     1.500 + @font-unit; // 24px
+// @font-size-h4:     1.250 + @font-unit; // 20px
+// @font-size-h5:     1.000 + @font-unit; // 16px
+// @font-size-h6:     0.875 + @font-unit; // 14px
+
+// @padding-base-vertical:     ((6px / @font-size-root) + @font-unit);
+// @padding-base-horizontal:   ((12px / @font-size-root) + @font-unit);
+ 
+// @padding-large-vertical:    ((10px / @font-size-root) + @font-unit);
+// @padding-large-horizontal:  ((16px / @font-size-root) + @font-unit);
+ 
+// @padding-small-vertical:    ((5px / @font-size-root) + @font-unit);
+// @padding-small-horizontal:  ((10px / @font-size-root) + @font-unit);
+ 
+// @padding-xs-vertical:       ((1px / @font-size-root) + @font-unit);
+// @padding-xs-horizontal:     ((5px / @font-size-root) + @font-unit);
+ 
+// @border-radius-base:        ((4px / @font-size-root) + @font-unit);
+// @border-radius-large:       ((6px / @font-size-root) + @font-unit);
+// @border-radius-small:       ((3px / @font-size-root) + @font-unit);
+ 
+// @caret-width-base:          ((4px / @font-size-root) + @font-unit);
+// @caret-width-large:         ((5px / @font-size-root) + @font-unit);
+ 
+// //** Default `.form-control` height
+// @input-height-base:         (@line-height-computed + (@padding-base-vertical * 2));
+// //** Large `.form-control` height
+// @input-height-large:        ((@font-size-large * @line-height-large) + (@padding-large-vertical * 2));
+// //** Small `.form-control` height
+// @input-height-small:        ((@font-size-small * @line-height-small) + (@padding-small-vertical * 2));
+
+// Set font family
+
+ 
+ // Basics of a navbar
+@navbar-height: 35px;
+
+// Set root font size
+ 
+html {
+  font-size: @font-size-root;
+}
+ 
+ 
+// // Change styling for elements that mix pixels and ems
+ 
+// pre {
+//   font-size: ( @font-size-base - (1 / @font-size-root) );
+// }
+ 
+// .form-control-feedback {
+//   width: calc(@input-height-base ~" + 2px");
+//   height: calc(@input-height-base ~" + 2px");
+// }
+// .input-lg + .form-control-feedback {
+//   width: calc(@input-height-large ~" + 2px");
+//   height: calc(@input-height-large ~" + 2px");
+// }
+// .input-sm + .form-control-feedback {
+//   width: calc(@input-height-small ~" + 2px");
+//   height: calc(@input-height-small ~" + 2px");
+// }
+ 
+// .form-control {
+//     height: calc(@input-height-base ~" + 2px");
+// }
+ 
+// .form-horizontal {
+//     .radio, .checkbox, .radio-inline, .checkbox-inline {
+//         padding: @padding-base-vertical;
+//         border: 1px solid transparent;
+//     }
+//     .radio, .checkbox {
+//         min-height: calc((@line-height-computed + @padding-base-vertical) ~"+ 1px");
+//     }
+//     .form-control-static {
+//         padding-top: @padding-base-vertical;
+//         border-top: 1px solid transparent;
+//         padding-bottom: @padding-base-vertical;
+//         border-bottom: 1px solid transparent;
+//     }
+ 
+//     @media (min-width: @screen-sm-min) {
+//         .control-label {
+//             padding-top: @padding-base-vertical;
+//             border-top: 1px solid transparent;
+//         }
+//     }
+// }
+//
+// Template Variables
+// --------------------------------------------------
+// Colors
+@color-primary: #3498db;
+// Spacing Standards (base number 8)
+@standard-space: @font-size-root * 3.75;
+@standard-radius: 0px;
+@standard-text-margin: 0.25em;
+// Shapes
+//
+// Template Mixins
+// --------------------------------------------------
+// Fonts
+.font-body {
+  font-family: @font-family-sans-serif;
+}
+.font-heading {
+  font-family: @font-family-sans-serif;
+}
+//
+// Type & Global
+// --------------------------------------------------
+body {
+  .font-body;
+  -webkit-font-smoothing: antialiased;
+  color: @color-text;
+  font-size: @font-size-base;
+  line-height: 28px;
+}
+h1, h2, h3, h4, h5, h5, h6 {
+  .font-heading;
+  font-weight: 700;
+  color: @color-heading;
+  margin: 0px;
+  margin-bottom: @standard-text-margin;
+}
+.alt-font {
+  font-family: @font-family-sans-serif;
+  font-weight: bold;
+  font-size: @font-size-base;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+h1 {
+  font-size: @font-size-h1;
+  .standard-h1;
+  margin-bottom: @standard-text-margin;
+}
+h2 {
+  font-size: @font-size-h2;
+  font-weight: 600;
+  margin-bottom: @standard-text-margin * 3;
+}
+h3 {
+  font-size: @font-size-h3;
+  font-weight: 600;
+  margin-bottom: @standard-text-margin * 2.5;
+}
+h5 {
+  font-size: @font-size-h5;
+  font-weight: 600;
+  margin-bottom: @standard-text-margin * 2;
+}
+h6 {
+  font-size: @font-size-h6;
+  font-weight: 600;
+  margin-bottom: @standard-text-margin;
+}
+strong {
+  font-weight: 700;
+}
+p {
+  font-size: @font-size-base;
+  margin-bottom: @standard-text-margin;
+}
+p.lead {
+  font-size: @font-size-base;
+  font-weight: normal;
+  margin-bottom: @standard-text-margin;
+}
+
+.main-container {
+  // padding-top: 80px;
+  .transition-300;
+  .translateX(@x-amount: 0px);
+  overflow: hidden;
+}
+.main-container.reveal-nav{ .translateX(@x-amount: -300px); }
+//
+// <section> Standards
+// --------------------------------------------------
+//
+// Button Styles
+// --------------------------------------------------
+.btn-primary {
+  .standard-radius;
+  display: inline-block;
+  padding: 14px 28px 13px 28px;
+  line-height: @line-height-computed * 2;
+  border: 2px solid @color-secondary-2;
+  .alt-font;
+  color: @color-secondary-2;
+  font-size: @font-size-large;
+}
+//
+// Link Styles
+// --------------------------------------------------
+//
+// Navigation
+// --------------------------------------------------
+.navbar-brand {
+  float: left;
+  padding: 0;
+  font-size: @font-size-h1;
+  line-height: @line-height-computed;
+  height: @navbar-height;
+  color: @gray-darker;
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+  @media (min-width:@grid-float-breakpoint) {
+    .navbar > .container &, .navbar > .container-fluid & {
+      margin-left: -@navbar-padding-horizontal;
+    }
+  }
+}
+.utility-menu {
+  margin-top: 10px;
+}
+.overlay-bar {
+  background: none;
+}
+Ω
+.menu li a:hover {
+  color: @color-heading;
+}
+ß
+.top-bar .social-icons li a {
+  font-size: @font-size-base;
+}
+//
+// Header, Banner, Slider Sections
+// --------------------------------------------------
+.hero-slider .slides .smallslider li {
+  // height: 350px;
+}
+.page-header p.lead {
+  font-size: @font-size-large;
+
+
+.hero-slider { 
+  padding: 0px; 
+  position: relative; 
+}
+
+.hero-slider .slides li {
+  height: 100%; 
+  max-height: 650px;
+  overflow: hidden; 
+  position: relative; 
+}
+
+}
+.hero-slider .slides li h1 {
+  font-size: 38px;
+  line-height: 56px;
+  margin-bottom: 40px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.5em;
+}
+.hero-slider .slides li .btn {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.hero-slider .slides li .btn:hover {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+header.title .sub {
+  font-size: @font-size-small;
+  letter-spacing: 0px;
+}
+//
+// Feature Sections
+// --------------------------------------------------
+
+//
+// Text Sections
+// --------------------------------------------------
+
+//Mixins
+
+// Styles
+
+.background-image-holder{ position: absolute; top: 0px; height: 100%; width: 100%; background-size: cover !important; z-index: 0; background-position: 50% 50% !important; }
+
+//
+// Strip Sections
+// --------------------------------------------------
+//
+// Pricing Tables
+// --------------------------------------------------
+
+//
+// Team Sections
+// --------------------------------------------------
+
+//
+// Blog Sections
+// --------------------------------------------------
+
+/*!
+/*!
+// 13. Pricing
+// --------------------------------------------------*/
+.pricing-option {
+  overflow:hidden;
+  background:#f4f4f4;
+  -webkit-transform-style:preserve-3d;
+  -moz-transform-style:preserve-3d;
+  transform-style:preserve-3d;
+  position:relative;
+  padding:72px 0;
+  margin-bottom:30px;
+  transition:all .3s ease-out;
+  -webkit-transition:all .3s ease-out;
+  -moz-transition:all .3s ease-out
+}
+
+.pricing-option .dot {
+  position:absolute;
+  top:24px;
+  right:24px;
+  width:24px;
+  height:24px;
+  border-radius:50%;
+  background:#fff
+}
+
+.pricing-option:hover {
+  // background:#ededed
+}
+
+@media all and (min-width:321px) o0p and (max-width:767px) and (orientation:landscape) {
+.pricing-options .col-sm-6 {
+  width:50%;
+  float:left
+}
+}
+
+.dollar,.price,.type {
+  font-weight:600;
+  color:#333;
+  font-size:64px
+}
+
+.dollar {
+  font-size:32px;
+  position:relative;
+  bottom:22px
+}
+
+.price {
+  line-height:1
+}
+
+.type {
+  display:block;
+  font-size:16px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  margin-top:12px
+}
+
+.plan-title {
+  display:block;
+  font-weight:600;
+  margin-bottom:12px;
+  font-size:16px;
+  color:#333
+}
+
+.pricing-option ul li {
+  color:#777
+}
+
+.pricing-option.emphasis {
+  background:#3498db;
+  color:#fff
+}
+
+.pricing-option.emphasis .type,.pricing-option.emphasis .dollar,.pricing-option.emphasis .price,.pricing-option.emphasis .plan-title,.pricing-option.emphasis ul li {
+  color:#fff!important
+}
+
+@media all and (max-width:991px) {
+.type {
+  margin-bottom:12px
+}
+
+.pricing-option {
+  text-align:center!important
+}
+}
+
+
+//
+// Galleries & Portfolio Sections
+// --------------------------------------------------
+//
+// Contact Sections
+// --------------------------------------------------
+//
+// Social Sections
+// --------------------------------------------------
+//
+// Utility Pages & Sections
+// --------------------------------------------------
+//
+// Forms
+// --------------------------------------------------
+//
+// Footers
+// --------------------------------------------------
+
+footer {
+  padding-top: @standard-space;
+  padding-bottom: @standard-space;
+}
+footer.short {
+  color: #fff;
+}
+footer.short .sub {
+  opacity: 0.5;
+  display: inline-block;
+  margin-right: @font-padding;
+  position: relative;
+  font-size: @font-size-base;
+  line-height: @line-height-computed;
+}
+footer.short .attribution {
+  opacity: 0.3;
+  display: inline-block;
+  margin-right: @font-padding;
+  position: relative;
+  font-size: @font-size-small;
+  line-height: @line-height-computed;
+}
+footer.short ul {
+  display: inline-block;
+  margin: 0px;
+  line-height: @line-height-computed;
+}
+footer.short ul li {
+  float: left;
+  margin-right: @font-padding;
+}
+footer.short ul li a {
+  color: #fff;
+  opacity: 0.8;
+}
+footer.short .social-icons li a {
+  color: #fff;
+  opacity: 1;
+}
+//
+// Smartphones
+// --------------------------------------------------
+// Navigation
+.nav-menu {
+  padding-top: 30px;
+}
+// Spacing
+// Typog
+// Buttons
+// Headers
+// Side Image
+// Feature Selector
+// Feature Boxes
+// Clients
+// Accordion
+// Strips
+// Inline Video
+// Inline Image Right
+// Pricing Tables
+// Footers
+// Blog
+// Contact
+// Projects
+// Image Gallery Lightbox
+// Video Divider
+// Fullscreen Elements
+// Instagram
+//
+// Landscape Tablets
+// --------------------------------------------------
+// Headers
+// Feature Boxes
+// Blog
+// Conact
+// Video Divider
+//
+// Portrait Tablets
+// --------------------------------------------------
+// Navigation
+// Headers
+// Feature Selector
+// Clients
+// Video
+// Pricing Tables
+// Footers
+// Blog
+// Video Divider
+// Instagram
+// Projects
+// Strips
+// Footers
+//
+// V 1.1.0 Updates - Resume Block Pack
+// --------------------------------------------------
