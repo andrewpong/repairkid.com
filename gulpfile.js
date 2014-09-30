@@ -4,9 +4,9 @@ var uglify = require('gulp-uglify');
 
 
 gulp.task('uncss', function() {
-    gulp.src('www')
+    return gulp.src('www/styles/theme.css')
       .pipe(uncss({
-          html: ['*.html']
+          html: ['www/index.html']
       }))
       .pipe(gulp.dest('dist'));
 });
