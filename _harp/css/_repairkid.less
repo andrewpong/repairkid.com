@@ -227,6 +227,14 @@ p.lead {
   font-weight: normal;
   margin-bottom: @standard-text-margin;
 }
+
+.main-container {
+  padding-top: 80px;
+  .transition-300;
+  .translateX(@x-amount: 0px);
+  overflow: hidden;
+}
+.main-container.reveal-nav{ .translateX(@x-amount: -300px); }
 //
 // <section> Standards
 // --------------------------------------------------
