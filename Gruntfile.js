@@ -21,7 +21,7 @@ module.exports = function (grunt) {
         // Project settings
         yeoman: {
             // Configurable paths
-            www: 'www',
+            app: 'www',
             dist: 'dist'
         },
 
@@ -438,11 +438,11 @@ module.exports = function (grunt) {
         'useminPrepare',
         'concurrent:dist',
         'autoprefixer',
-        'concat',
-        'cssmin',
+        'usemin',
+        // 'cssmin',
         'uglify',
         'copy:dist',
-        'modernizr',
+        // 'modernizr',
         'rev',
         'usemin',
         'htmlmin'
