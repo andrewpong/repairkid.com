@@ -14,18 +14,19 @@
 //-                 | We schedule 1-2 hour appointments for computer repair sessions, or pickup/dropoff services for busier lifestyles.
 //-             // end of row
 //-         // end of row
-section.hero-slider
-  ul.slides
-    .smallslider
-      li.overlay
-        .background-image-holder.parallax-backgroundΩ
-          img.background-image(alt="Background Image", src="/img/services/slider01.jpg")
-        .container.align-vertical
-          .row
-            .col-md-6.col-sm-9.pull-left
-              h1.text-white We repair, speed up, upgrade, and protect any computer -  Windows or Mac OSX.
-        // end of container
-      // end of individual slide
+section.slider
+  .flexslider
+    .flex-viewport
+      ul.slides
+        li.clone
+          .background-image-holder.parallax-backgroundΩ
+            img.background-image(alt="Background Image", src="/img/services/slider01.jpg")
+          .container.align-vertical
+            .row
+              .col-md-6.col-sm-9.pull-left
+                h1.text-white We repair, speed up, upgrade, and protect any computer -  Windows or Mac OSX.
+          // end of container
+        // end of individual slide
 section.duplicatable-content
   .container
     .row.text-center
