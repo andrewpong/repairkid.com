@@ -21,7 +21,7 @@ module.exports = function (grunt) {
         // Project settings
         yeoman: {
             // Configurable paths
-            app: 'app',
+            www: 'www',
             dist: 'dist'
         },
 
@@ -78,6 +78,16 @@ module.exports = function (grunt) {
                     ]
                 }
             },
+            // test: {
+            //     options: {
+            //         port: 9001,
+            //         base: [
+            //             '.tmp',
+            //             'test',
+            //             '<%= yeoman.app %>'
+            //         ]
+            //     }
+            // },
             test: {
                 options: {
                     port: 9001,
@@ -319,6 +329,35 @@ module.exports = function (grunt) {
             }
         },
 
+        // Remove unused CSS across multiple files, compressing the final output
+        uncss: {
+            dist: {
+                files: [{
+                    src: 'www/*.html',
+                    dest: 'dist/css/compiled.min.css'
+                }]
+            },
+            options: {
+                compress: true
+            }
+        },
+        processhtml: {
+            dist: {
+                files: {
+                    'dist/index.html': ['www/index.html']
+                }
+            }
+        },
+        uglify: {
+            dist: {
+                files: {
+                    'dist/js/compiled.min.js': ['www/js/jquery.js',
+                            'www/js/*.js'
+                        ] // make sure we load jQuery first
+                }
+            }
+        },
+
 
         // Generates a custom Modernizr build that includes only the tests you
         // reference in your app
@@ -343,13 +382,21 @@ module.exports = function (grunt) {
                 'copy:styles'
             ],
             dist: [
-                'compass',
+                // 'compass',
                 'copy:styles',
                 'imagemin',
                 'svgmin'
             ]
         }
     });
+
+    // Load the plugins
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-uncss');
+    grunt.loadNpmTasks('grunt-processhtml');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    // Default tasks.
+    grunt.registerTask('default', ['copy', 'uglify', 'uncss', 'processhtml']);
 
 
     grunt.registerTask('serve', function (target) {
@@ -386,7 +433,7 @@ module.exports = function (grunt) {
         ]);
     });
 
-    grunt.registerTask('build', [
+    grunt.registerTask('default', [
         'clean:dist',
         'useminPrepare',
         'concurrent:dist',
@@ -401,12 +448,9 @@ module.exports = function (grunt) {
         'htmlmin'
     ]);
 
-    grunt.registerTask('default', [
+    grunt.registerTask('test2', [
         'newer:jshint',
         'test',
         'build'
     ]);
-
-    grunt.loadNpmTasks('grunt-uncss');
-
 };
