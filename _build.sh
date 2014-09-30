@@ -9,3 +9,6 @@ divshot push
 echo "Divshotted! Pushing to Firebase...";
 firebase deploy
 echo -e "Your base is fire!! Project deployed without a hitch.";
+divshot promote development staging
+divshot promote developement production
+echo "Promoted to production! Website is LIVE @ repairkid.com!!";
