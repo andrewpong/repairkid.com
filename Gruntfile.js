@@ -150,33 +150,7 @@ module.exports = function (grunt) {
 
 
 
-        // Compiles Sass to CSS and generates necessary files if requested
-        compass: {
-            options: {
-                sassDir: '<%= yeoman.app %>/styles',
-                cssDir: '.tmp/styles',
-                generatedImagesDir: '.tmp/images/generated',
-                imagesDir: '<%= yeoman.app %>/images',
-                javascriptsDir: '<%= yeoman.app %>/scripts',
-                fontsDir: '<%= yeoman.app %>/styles/fonts',
-                importPath: '<%= yeoman.app %>/bower_components',
-                httpImagesPath: '/images',
-                httpGeneratedImagesPath: '/images/generated',
-                httpFontsPath: '/styles/fonts',
-                relativeAssets: false,
-                assetCacheBuster: false
-            },
-            dist: {
-                options: {
-                    generatedImagesDir: '<%= yeoman.dist %>/images/generated'
-                }
-            },
-            server: {
-                options: {
-                    debugInfo: true
-                }
-            }
-        },
+        
 
         // Add vendor prefixed styles
         autoprefixer: {
@@ -215,24 +189,24 @@ module.exports = function (grunt) {
             }
         },
 
-        // Reads HTML for usemin blocks to enable smart builds that automatically
-        // concat, minify and revision files. Creates configurations in memory so
-        // additional tasks can operate on them
-        useminPrepare: {
-            options: {
-                dest: '<%= yeoman.dist %>'
-            },
-            html: '<%= yeoman.app %>/index.html'
-        },
+        // // Reads HTML for usemin blocks to enable smart builds that automatically
+        // // concat, minify and revision files. Creates configurations in memory so
+        // // additional tasks can operate on them
+        // useminPrepare: {
+        //     options: {
+        //         dest: '<%= yeoman.dist %>'
+        //     },
+        //     html: '<%= yeoman.app %>/index.html'
+        // },
 
-        // Performs rewrites based on rev and the useminPrepare configuration
-        usemin: {
-            options: {
-                assetsDirs: ['<%= yeoman.dist %>']
-            },
-            html: ['<%= yeoman.dist %>/{,*/}*.html'],
-            css: ['<%= yeoman.dist %>/styles/{,*/}*.css']
-        },
+        // // Performs rewrites based on rev and the useminPrepare configuration
+        // usemin: {
+        //     options: {
+        //         assetsDirs: ['<%= yeoman.dist %>']
+        //     },
+        //     html: ['<%= yeoman.dist %>/{,*/}*.html'],
+        //     css: ['<%= yeoman.dist %>/styles/{,*/}*.css']
+        // },
 
         // The following *-min tasks produce minified files in the dist folder
         imagemin: {
@@ -279,16 +253,16 @@ module.exports = function (grunt) {
         // By default, your `index.html`'s <!-- Usemin block --> will take care of
         // minification. These next options are pre-configured if you do not wish
         // to use the Usemin blocks.
-        // cssmin: {
-        //     dist: {
-        //         files: {
-        //             '<%= yeoman.dist %>/styles/main.css': [
-        //                 '.tmp/styles/{,*/}*.css',
-        //                 '<%= yeoman.app %>/styles/{,*/}*.css'
-        //             ]
-        //         }
-        //     }
-        // },
+        cssmin: {
+            dist: {
+                files: {
+                    '<%= yeoman.dist %>/styles/main.css': [
+                        '.tmp/styles/{,*/}*.css',
+                        '<%= yeoman.app %>/styles/{,*/}*.css'
+                    ]
+                }
+            }
+        },
         // uglify: {
         //     dist: {
         //         files: {
@@ -298,9 +272,12 @@ module.exports = function (grunt) {
         //         }
         //     }
         // },
-        // concat: {
-        //     dist: {}
-        // },
+        concat: {
+            dist: {
+              src: ['<%= yeoman.dist %>/scripts/*.js'],
+              dest: 'dist/built.js',
+            }
+        },
 
         // Copies remaining files to places other tasks can use
         copy: {
@@ -315,7 +292,7 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.webp',
                         '{,*/}*.html',
-                        'styles/fonts/{,*/}*.*',
+                        'fonts/{,*/}*.*',
                         'bower_components/' + (this.includeCompass ? 'sass-' : '') + 'bootstrap/' + (this.includeCompass ? 'fonts/' : 'dist/fonts/') +'*.*'
                     ]
                 }]
@@ -333,8 +310,8 @@ module.exports = function (grunt) {
         uncss: {
             dist: {
                 files: [{
-                    src: 'www/*.html',
-                    dest: 'dist/css/compiled.min.css'
+                    src: '<%= yeoman.app %>/*.html',
+                    dest: '<%= yeoman.dist %>/styles/compiled.min.css'
                 }]
             },
             options: {
@@ -344,15 +321,15 @@ module.exports = function (grunt) {
         processhtml: {
             dist: {
                 files: {
-                    'dist/index.html': ['www/index.html']
+                    '<%= yeoman.dist %>/index.html': ['<%= yeoman.app %>/index.html']
                 }
             }
         },
         uglify: {
             dist: {
                 files: {
-                    'dist/js/compiled.min.js': ['www/js/jquery.js',
-                            'www/js/*.js'
+                    '<%= yeoman.dist %>/scripts/compiled.min.js': ['<%= yeoman.app %>/scripts/jquery.js',
+                            '<%= yeoman.app %>/scripts/*.js'
                         ] // make sure we load jQuery first
                 }
             }
@@ -394,6 +371,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-uncss');
     grunt.loadNpmTasks('grunt-processhtml');
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     // Default tasks.
     grunt.registerTask('default', ['copy', 'uglify', 'uncss', 'processhtml']);
@@ -438,13 +416,13 @@ module.exports = function (grunt) {
         'useminPrepare',
         'concurrent:dist',
         'autoprefixer',
-        // 'concat',
-        // 'cssmin',
+        'concat',
+        'cssmin',
         'uglify',
         'copy:dist',
         // 'modernizr',
         'rev',
-        'usemin',
+        // 'usemin',
         'htmlmin'
     ]);
 
