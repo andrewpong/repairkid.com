@@ -1,7 +1,7 @@
 var gulp = require('gulp');
-var uncss = require('gulp-uncss');
-var uglify = require('gulp-uglify');
 
+// Removes unused CSS
+var uncss = require('gulp-uncss');
 
 gulp.task('uncss', function() {
     return gulp.src('www/styles/theme.css')
@@ -20,8 +20,22 @@ gulp.task('uncss', function() {
       .pipe(gulp.dest('dist/styles'));
 });
 
+// Compresses Javascript
+var uglify = require('gulp-uglify');
+
 gulp.task('compress', function() {
   gulp.src('www/scripts/*.js')
     .pipe(uglify())
     .pipe(gulp.dest('dist/scripts'))
+});
+
+// Concatenates files
+var concat = require('gulp-concat');
+
+gulp.task('concat', function() {
+  gulp.src([
+    'www/scripts/', 
+    './lib/file2.js'])
+    .pipe(concat('all.js'))
+    .pipe(gulp.dest('./dist/'))
 });
