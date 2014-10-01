@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var clean = require('gulp-clean');
 var uncss = require('gulp-uncss');
 var minifyCSS = require('gulp-minify-css');
 var minifyHTML = require('gulp-minify-html');
@@ -9,9 +10,13 @@ var pngcrush = require('imagemin-pngcrush');
 var jpegtran = require('imagemin-jpegtran');
 
 gulp.task('default', function() {
-  gulp.start('minify-js', 'minify-css', 'minify-html', 'minify-img');
+  gulp.start('clean', 'minify-js', 'minify-css', 'minify-html', 'minify-img');
 })
 
+gulp.task('clean', function () {
+    return gulp.src('dist', {read: false})
+        .pipe(clean());
+});
 // Concatenate and minify all JS to all.js
 gulp.task('minify-js', function() {
   gulp.src([
