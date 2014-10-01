@@ -75,16 +75,16 @@
 html {
 }
 
-body, p {
+body {
   .font-body;
   -webkit-font-smoothing: antialiased;
   color: @color-text;
   background-color: @color-bg-primary;
-  font-size: @font-size-base;
   font-family: @font-family-base;
   font-weight: @font-weight-normal;
   line-height: @line-height-base;
 }
+
 h1, h2, h3, h4, h5, h5, h6 {
   .font-heading;
   font-weight: @font-weight-bold;
@@ -122,11 +122,15 @@ strong {
   font-weight: @font-weight-bold;
 }
 p {
+  font-size: @font-size-base;
+  font-weight: @font-weight-normal;
+  line-height: @line-height-base;
   margin-bottom: @standard-text-margin;
 }
 p.lead {
   font-size: @font-size-base;
-  font-weight: normal;
+  font-weight: @font-weight-normal;
+  line-height: @line-height-base;
   margin-bottom: @standard-text-margin;
 }
 
