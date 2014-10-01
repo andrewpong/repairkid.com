@@ -266,10 +266,12 @@ $(window).load(function(){
   
   // Align Elements Vertically
   
+  navAlignVertical;
   alignVertical();
   alignBottom();
   
   $(window).resize(function(){
+  navAlignVertical;
     alignVertical();
     alignBottom();
   });
@@ -404,7 +406,7 @@ function handleTweets(tweets){
           element.innerHTML = html;
     }
 
-function alignVertical(){
+function navAlignVertical(){
 
     $('.nav-align-vertical').each(function(){
       var that = $(this);
