@@ -28,8 +28,8 @@
 @font-size-root:          16px;
 @font-size-small:         ceil((@font-size-root * 0.875));
 @font-size-base:          ceil((@font-size-root * 1.000));
-@font-size-medium:        ceil((@font-size-root * 1.250));
-@font-size-large:         ceil((@font-size-root * 1.500));
+@font-size-medium:        ceil((@font-size-root * 1.500));
+@font-size-large:         ceil((@font-size-root * 3.000));
 // @font-unit:               0rem; // Pick em or rem here
 @font-padding:            @font-size-root * 2;
 
@@ -249,7 +249,7 @@ p.lead {
   border: 2px solid @color-secondary-2;
   .alt-font;
   color: @color-secondary-2;
-  font-size: @font-size-large;
+  font-size: @font-size-medium;
 }
 //
 // Link Styles
@@ -294,7 +294,7 @@ p.lead {
   // height: 350px;
 }
 .page-header p.lead {
-  font-size: @font-size-large;
+  font-size: @font-size-medium;
 
 
 .hero-slider { 
@@ -337,7 +337,9 @@ header.title .sub {
 //
 // Text Sections
 // --------------------------------------------------
-
+.calltoaction h2 {
+  font-size: @font-size-large;
+}
 //Mixins
 
 // Styles
