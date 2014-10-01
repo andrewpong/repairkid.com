@@ -15,6 +15,7 @@
 @font-size-medium:        ceil((@font-size-root * 1.500));
 @font-size-large:         ceil((@font-size-root * 2.500));
 @font-size-huge:          ceil((@font-size-root * 3.000));
+@font-size-gigantic       ceil((@font-size-root * 8.000));
 
 @font-padding:            @font-size-root * 2;
 
@@ -252,15 +253,15 @@ header.title .sub {
 }
 .feature-icon-large i {
   display: block;
-  height: 128px;
-  width: 128px;
+  height: @font-size-gigantic;
+  width: @font-size-gigantic;
   border: 2px solid @color-primary;
   border-radius: 50%;
   text-align: center;
   color: @color-primary;
   font-size: 40px;
-  padding-top: 31px;
-  margin-bottom: 32px;
+  // padding-top: 31px;
+  // margin-bottom: 32px;
 }
 
 .duplicatable-content .feature {
