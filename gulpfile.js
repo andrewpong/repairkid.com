@@ -59,7 +59,7 @@ gulp.task('minify-css', function() {
 
 // Minify all html files
 gulp.task('minify-html', function() {
-    var opts = {comments:true,spare:true};
+    var opts = {comments:false,spare:true};
 
   gulp.src('www/**/*.html')
     .pipe(minifyHTML(opts))
