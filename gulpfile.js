@@ -18,7 +18,7 @@ gulp.task('clean', function () {
 });
 
 gulp.task('copy-fonts', function(){
-  gulp.src('www/fonts')
+  gulp.src('www/fonts/*')
     .pipe(gulp.dest('dist/fonts'));
 });
 
