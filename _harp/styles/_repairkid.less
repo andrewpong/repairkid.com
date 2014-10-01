@@ -69,7 +69,6 @@
 // Type & Global
 // --------------------------------------------------
 
-.alt-font{ font-family: @font-family-base; font-weight: @font-weight-normal; font-size: @font-size-base; text-transform: none; letter-spacing: 1px; }
 
 
 // Basics of a navbar
@@ -246,8 +245,14 @@ p.lead {
   background: none;
 }
 
-.menu li a:hover {
-  color: @color-heading;
+.menu{ padding: 0; margin: 0; display: inline-block; position: relative; top: 2px; }
+.menu li{ float: left; margin-right: 56px; position: relative; }
+.menu li:last-child{ margin-right: 0px; }
+.menu li a{ color: @color-text; .transition-500; padding-bottom: 40px; display: inline-block; line-height: 14px; }
+.menu li a:hover{ color: @color-heading; }
+
+@media all and (max-width: 1050px){
+  .menu li{ margin-right: 32px; }
 }
 
 .top-bar .social-icons li a {
