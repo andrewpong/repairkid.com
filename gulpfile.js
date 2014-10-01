@@ -9,7 +9,7 @@ var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 
 gulp.task('default', function() {
-  gulp.start('clean', 'minify-js', 'minify-css', 'minify-html', 'minify-img');
+  gulp.start('minify-js', 'minify-css', 'minify-html', 'minify-img');
 })
 
 gulp.task('clean', function () {
