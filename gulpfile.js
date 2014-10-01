@@ -9,13 +9,24 @@ var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 
 gulp.task('default', function() {
-  gulp.start('minify-js', 'minify-css', 'minify-html', 'minify-img');
+  gulp.start('copy-fonts', 'copy-modernizr', 'minify-js', 'minify-css', 'minify-html', 'minify-img');
 })
 
 gulp.task('clean', function () {
   return gulp.src('dist', { read: false }) // much faster
     .pipe(rimraf());
 });
+
+gulp.task('copy-fonts', function(){
+  gulp.src('www/fonts')
+    .pipe(gulp.dest('dist/fonts'));
+});
+
+gulp.task('copy-modernizr', function(){
+  gulp.src('www/scripts/modernizr.js')
+    .pipe(gulp.dest('dist/scripts'));
+});
+
 // Concatenate and minify all JS to all.js
 gulp.task('minify-js', function() {
   gulp.src([
@@ -39,9 +50,9 @@ gulp.task('minify-css', function() {
   return gulp.src([
     'www/styles/bootstrap.css', 
     'www/styles/flexlider.css', 
-    'www/styles/lineicons.css', 
-    'www/styles/eleganticons.css', 
-    'www/styles/fontawesome.css', 
+    'www/styles/line-icons.css', 
+    'www/styles/elegant-icons.css', 
+    'www/styles/font-awesome.css', 
     'www/styles/theme.css'
     ])
     .pipe(concat('all.css'))
