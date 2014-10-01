@@ -5,6 +5,10 @@ var minifyHTML = require('gulp-minify-html');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 
+gulp.task('default', function() {
+  gulp.start('minify-js', 'minify-css', 'minify-html');
+})
+
 // Concatenate and minify all JS to all.js
 gulp.task('minify-js', function() {
   gulp.src([
