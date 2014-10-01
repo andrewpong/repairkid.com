@@ -8,7 +8,7 @@ var imagemin = require('gulp-imagemin');
 var pngcrush = require('imagemin-pngcrush');
 
 gulp.task('default', function() {
-  gulp.start('minify-js', 'minify-css', 'minify-html');
+  gulp.start('minify-js', 'minify-css', 'minify-html', 'minify-img');
 })
 
 // Concatenate and minify all JS to all.js
@@ -73,5 +73,5 @@ gulp.task('minify-img', function () {
             svgoPlugins: [{removeViewBox: false}],
             use: [pngcrush()]
         }))
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('dist/images'));
 });
