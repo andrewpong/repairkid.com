@@ -266,12 +266,12 @@ $(window).load(function(){
   
   // Align Elements Vertically
   
-  navAlignVertical;
+  navAlignVertical();
   alignVertical();
   alignBottom();
   
   $(window).resize(function(){
-  navAlignVertical;
+    navAlignVertical();
     alignVertical();
     alignBottom();
   });
