@@ -412,7 +412,7 @@ function alignVertical(){
       var navHeight = nav.height();
       var height = that.height();
       var parentHeight = that.parent().height();
-      var padAmount = (parentHeight / 2) - (height/2) + (navHeight/2);
+      var padAmount = (parentHeight / 2) - (height/2);
       that.css('padding-top', padAmount);
     });
   
