@@ -43,6 +43,7 @@
 @color-primary: #3498db;
 @color-secondary-1: #2c3e50;
 @color-secondary-2: #3498db;
+@color-tertiary: #34db77;
 
 @color-text: #3a3a3a;
 @color-heading: #3a3a3a;
@@ -150,13 +151,12 @@ p.lead {
 // Button Styles
 // --------------------------------------------------
 .btn-primary {
-  .standard-radius;
   display: inline-block;
   padding: 14px 28px 13px 28px;
   line-height: @line-height-computed * 2;
-  border: 2px solid @color-secondary-2;
-  .alt-font;
-  color: @color-secondary-2;
+  border: 2px solid darken(@color-tertiary, 50%);
+  background-color: @color-tertiary;
+  color: @color-bg-primary;
   font-size: @font-size-medium;
 }
 //
