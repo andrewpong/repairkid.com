@@ -9,7 +9,7 @@ var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 
 gulp.task('default', function() {
-  gulp.start('copy-fonts', 'copy-modernizr', 'minify-js', 'minify-css', 'minify-html', 'minify-img');
+  gulp.start('copy-fonts', 'copy-standalone-js', 'minify-js', 'minify-css', 'minify-html', 'minify-img');
 })
 
 gulp.task('clean', function () {
