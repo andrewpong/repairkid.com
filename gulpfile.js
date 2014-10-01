@@ -22,8 +22,11 @@ gulp.task('copy-fonts', function(){
     .pipe(gulp.dest('dist/fonts'));
 });
 
-gulp.task('copy-modernizr', function(){
-  gulp.src('www/scripts/modernizr.js')
+gulp.task('copy-standalone-js', function(){
+  gulp.src([
+    'www/scripts/analytics.js',
+    'www/scripts/modernizr.js'
+    ])
     .pipe(gulp.dest('dist/scripts'));
 });
 
