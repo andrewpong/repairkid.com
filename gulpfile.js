@@ -62,8 +62,6 @@ gulp.task('minify-css', function() {
           'www/index.html',
           'www/sitemap.html',
           'www/404.html',
-          "www/about/index.html",
-          "www/contact/index.html",
           "www/privacy/index.html",
           "www/services/index.html",
           "www/terms/index.html"
