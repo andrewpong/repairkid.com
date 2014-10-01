@@ -79,6 +79,7 @@ body, p {
   .font-body;
   -webkit-font-smoothing: antialiased;
   color: @color-text;
+  background-color: @color-bg-primary;
   font-size: @font-size-base;
   font-family: @font-family-base;
   font-weight: @font-weight-normal;
@@ -215,17 +216,17 @@ p.lead {
   font-size: 38px;
   line-height: 56px;
   margin-bottom: 40px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(@black, 0.7);
   padding: 0.5em;
 }
 .hero-slider .slides li .btn {
   margin: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(@black, 0.7);
   color: @white;
 }
 .hero-slider .slides li .btn:hover {
   margin: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(@black, 0.2);
   color: @white;
 }
 header.title .sub {
@@ -270,7 +271,7 @@ header.title .sub {
 // --------------------------------------------------*/
 .pricing-option {
   overflow:hidden;
-  background:#f4f4f4;
+  background-color: @color-bg-muted;
   -webkit-transform-style:preserve-3d;
   -moz-transform-style:preserve-3d;
   transform-style:preserve-3d;
@@ -332,20 +333,20 @@ header.title .sub {
   font-weight:600;
   margin-bottom:12px;
   font-size:16px;
-  color:#333
+  color: @color-heading;
 }
 
 .pricing-option ul li {
-  color:#777
+  color: @color-heading;
 }
 
 .pricing-option.emphasis {
   background:#3498db;
-  color:#fff
+  color: @color-bg-primary;
 }
 
 .pricing-option.emphasis .type,.pricing-option.emphasis .dollar,.pricing-option.emphasis .price,.pricing-option.emphasis .plan-title,.pricing-option.emphasis ul li {
-  color:#fff!important
+  color: @color-bg-primary!important
 }
 
 @media all and (max-width:991px) {
