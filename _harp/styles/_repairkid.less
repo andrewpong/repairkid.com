@@ -1,38 +1,21 @@
-//
-// Load core variables and mixins
-// --------------------------------------------------
-// @import (reference) "../bootstrap.less";
-// @import "../pivot/_theme.less";
-
-
-// //
-// // Load core variables and mixins
-// // --------------------------------------------------
-// @import (reference) "../_bootstrap/variables.less";
-// @import (reference) "_bootstrap/mixins.less";
-
-/**
- * Use em or rem font-size in Bootstrap 3
- */
-
-// Optimized Typography for 16px Font in 960px-wide Setting
-// Font Size: 16 Line Height: 28 Content Width: 960 Approx. CPL: 136 Font: 
-
 
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
 //font-family: 'Oxygen', sans-serif;
-@font-family-sans-serif:  Oxygen, "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-family-base:        @font-family-sans-serif;
+@font-family-base:        Oxygen, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@font-weight-normal: 400;
+@font-weight-bold:   700;
 
 @font-size-root:          16px;
+
 @font-size-small:         ceil((@font-size-root * 0.875));
 @font-size-base:          ceil((@font-size-root * 1.000));
 @font-size-medium:        ceil((@font-size-root * 1.500));
 @font-size-large:         ceil((@font-size-root * 3.000));
 @font-size-huge:          ceil((@font-size-root * 4.000));
-// @font-unit:               0rem; // Pick em or rem here
+
 @font-padding:            @font-size-root * 2;
 
 @font-size-h1:            floor((@font-size-root * 2.000)); // ~36px
@@ -49,106 +32,9 @@
 
 //** By default, this inherits from the `<body>`.
 @headings-font-family:    inherit;
-@headings-font-weight:    500;
+@headings-font-weight:    700;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
- 
-// Convert all variables to em
- 
-
- 
-// @font-size-h1:     2.000 + @font-unit; // 32px
-// @font-size-h2:     1.750 + @font-unit; // 28px
-// @font-size-h3:     1.500 + @font-unit; // 24px
-// @font-size-h4:     1.250 + @font-unit; // 20px
-// @font-size-h5:     1.000 + @font-unit; // 16px
-// @font-size-h6:     0.875 + @font-unit; // 14px
-
-// @padding-base-vertical:     ((6px / @font-size-root) + @font-unit);
-// @padding-base-horizontal:   ((12px / @font-size-root) + @font-unit);
- 
-// @padding-large-vertical:    ((10px / @font-size-root) + @font-unit);
-// @padding-large-horizontal:  ((16px / @font-size-root) + @font-unit);
- 
-// @padding-small-vertical:    ((5px / @font-size-root) + @font-unit);
-// @padding-small-horizontal:  ((10px / @font-size-root) + @font-unit);
- 
-// @padding-xs-vertical:       ((1px / @font-size-root) + @font-unit);
-// @padding-xs-horizontal:     ((5px / @font-size-root) + @font-unit);
- 
-// @border-radius-base:        ((4px / @font-size-root) + @font-unit);
-// @border-radius-large:       ((6px / @font-size-root) + @font-unit);
-// @border-radius-small:       ((3px / @font-size-root) + @font-unit);
- 
-// @caret-width-base:          ((4px / @font-size-root) + @font-unit);
-// @caret-width-large:         ((5px / @font-size-root) + @font-unit);
- 
-// //** Default `.form-control` height
-// @input-height-base:         (@line-height-computed + (@padding-base-vertical * 2));
-// //** Large `.form-control` height
-// @input-height-large:        ((@font-size-large * @line-height-large) + (@padding-large-vertical * 2));
-// //** Small `.form-control` height
-// @input-height-small:        ((@font-size-small * @line-height-small) + (@padding-small-vertical * 2));
-
-// Set font family
-
- 
- // Basics of a navbar
-@navbar-height: 35px;
-
-// Set root font size
- 
-html {
-  font-size: @font-size-root;
-}
- 
- 
-// // Change styling for elements that mix pixels and ems
- 
-// pre {
-//   font-size: ( @font-size-base - (1 / @font-size-root) );
-// }
- 
-// .form-control-feedback {
-//   width: calc(@input-height-base ~" + 2px");
-//   height: calc(@input-height-base ~" + 2px");
-// }
-// .input-lg + .form-control-feedback {
-//   width: calc(@input-height-large ~" + 2px");
-//   height: calc(@input-height-large ~" + 2px");
-// }
-// .input-sm + .form-control-feedback {
-//   width: calc(@input-height-small ~" + 2px");
-//   height: calc(@input-height-small ~" + 2px");
-// }
- 
-// .form-control {
-//     height: calc(@input-height-base ~" + 2px");
-// }
- 
-// .form-horizontal {
-//     .radio, .checkbox, .radio-inline, .checkbox-inline {
-//         padding: @padding-base-vertical;
-//         border: 1px solid transparent;
-//     }
-//     .radio, .checkbox {
-//         min-height: calc((@line-height-computed + @padding-base-vertical) ~"+ 1px");
-//     }
-//     .form-control-static {
-//         padding-top: @padding-base-vertical;
-//         border-top: 1px solid transparent;
-//         padding-bottom: @padding-base-vertical;
-//         border-bottom: 1px solid transparent;
-//     }
- 
-//     @media (min-width: @screen-sm-min) {
-//         .control-label {
-//             padding-top: @padding-base-vertical;
-//             border-top: 1px solid transparent;
-//         }
-//     }
-// }
-//
 // Template Variables
 // --------------------------------------------------
 // Colors
@@ -157,33 +43,32 @@ html {
 @standard-space: @font-size-root * 3.75;
 @standard-radius: 0px;
 @standard-text-margin: 0.25em;
-// Shapes
-//
-// Template Mixins
-// --------------------------------------------------
-// Fonts
-.font-body {
-  font-family: @font-family-sans-serif;
-}
-.font-heading {
-  font-family: @font-family-sans-serif;
-}
 //
 // Type & Global
 // --------------------------------------------------
-body {
+
+// Basics of a navbar
+@navbar-height: 35px;
+
+// Set root font size
+ 
+html {
+}
+
+body, p {
   .font-body;
   -webkit-font-smoothing: antialiased;
   color: @color-text;
   font-size: @font-size-base;
-  line-height: 28px;
+  font-family: @font-family-base;
+  font-weight: @font-weight-normal;
+  line-height: @line-height-base;
 }
 h1, h2, h3, h4, h5, h5, h6 {
   .font-heading;
-  font-weight: 500;
+  font-weight: @font-weight-bold;
   color: @color-heading;
   margin: 0px;
-  margin-bottom: @standard-text-margin;
 }
 .alt-font {
   font-family: @font-family-sans-serif;
@@ -194,7 +79,6 @@ h1, h2, h3, h4, h5, h5, h6 {
 }
 h1 {
   font-size: @font-size-h1;
-  .standard-h1;
   margin-bottom: @standard-text-margin * 5;
 }
 h2 {
@@ -214,10 +98,9 @@ h6 {
   margin-bottom: @standard-text-margin;
 }
 strong {
-  font-weight: 700;
+  font-weight: @font-weight-bold;
 }
 p {
-  font-size: @font-size-base;
   margin-bottom: @standard-text-margin;
 }
 p.lead {
