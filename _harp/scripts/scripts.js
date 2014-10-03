@@ -429,7 +429,6 @@ function alignVertical(){
       var padAmount = (parentHeight / 2) - (height/2);
       that.css('padding-top', padAmount);
     });
-  
 }
 
 function alignBottom(){
